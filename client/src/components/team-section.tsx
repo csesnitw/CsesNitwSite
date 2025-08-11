@@ -1,6 +1,6 @@
 import { useQuery } from "@tanstack/react-query";
 import { Card, CardContent } from "@/components/ui/card";
-import { Linkedin, Github, Twitter } from "lucide-react";
+import { Linkedin, Github, Twitter, Users } from "lucide-react";
 import type { TeamMember } from "@shared/schema";
 
 export default function TeamSection() {
@@ -19,13 +19,13 @@ export default function TeamSection() {
   }
 
   const getPositionColor = (position: string) => {
-    if (position.includes('President') || position.includes('General Secretary')) return 'text-green-500 matrix-glow holographic-text';
-    if (position.includes('Vice')) return 'text-green-400 matrix-glow';
-    if (position.includes('Technical')) return 'text-green-300 matrix-glow';
-    if (position.includes('Events')) return 'text-green-400 matrix-glow';
-    if (position.includes('Design')) return 'text-green-300 matrix-glow';
-    if (position.includes('Outreach')) return 'text-green-400 matrix-glow';
-    return 'text-green-500 matrix-glow';
+    if (position.includes('President') || position.includes('General Secretary')) return 'text-purple-500 matrix-glow holographic-text';
+    if (position.includes('Vice')) return 'text-purple-400 matrix-glow';
+    if (position.includes('Technical')) return 'text-purple-300 matrix-glow';
+    if (position.includes('Events')) return 'text-purple-400 matrix-glow';
+    if (position.includes('Design')) return 'text-purple-300 matrix-glow';
+    if (position.includes('Outreach')) return 'text-purple-400 matrix-glow';
+    return 'text-purple-500 matrix-glow';
   };
 
   return (
@@ -44,12 +44,9 @@ export default function TeamSection() {
               <div className="absolute inset-0 cyberpunk-scan-lines"></div>
               <CardContent className="p-6 relative z-10">
                 <div className="relative inline-block">
-                  <img 
-                    src={member.imageUrl || "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=300"} 
-                    alt={`${member.name} profile`} 
-                    className="w-24 h-24 rounded-full mx-auto mb-4 object-cover cyberpunk-border"
-                    data-testid={`member-image-${member.id}`}
-                  />
+                  <div className="w-24 h-24 rounded-full mx-auto mb-4 bg-gradient-to-br from-purple-900 to-black flex items-center justify-center cyberpunk-border">
+                    <Users className="text-purple-400 text-3xl" />
+                  </div>
                 </div>
                 <h4 className="text-xl font-semibold mb-2 matrix-text matrix-glow" data-testid={`member-name-${member.id}`}>
                   {member.name}

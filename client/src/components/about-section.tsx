@@ -12,21 +12,12 @@ export default function AboutSection() {
           </p>
         </div>
         
-        <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div>
-            <img 
-              src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
-              alt="Computer science students collaborating" 
-              className="rounded-xl shadow-lg w-full h-auto"
-              data-testid="about-image"
-            />
-          </div>
-          
+        <div className="max-w-4xl mx-auto">
           <div className="space-y-6">
             <Card className="cyberpunk-glow-card hover-lift relative">
               <div className="absolute inset-0 cyberpunk-scan-lines"></div>
               <CardContent className="p-6 relative z-10">
-                <Target className="text-green-500 text-2xl mb-4 matrix-glow" />
+                <Target className="text-purple-500 text-2xl mb-4 matrix-glow" />
                 <h3 className="text-xl font-semibold mb-3 matrix-text matrix-glow" data-testid="mission-title">Our Mission</h3>
                 <p className="text-slate-300 matrix-text" data-testid="mission-description">
                   To create a vibrant community of computer science enthusiasts, fostering technical excellence, 
@@ -38,7 +29,7 @@ export default function AboutSection() {
             <Card className="cyberpunk-glow-card hover-lift relative">
               <div className="absolute inset-0 cyberpunk-scan-lines"></div>
               <CardContent className="p-6 relative z-10">
-                <Eye className="text-green-400 text-2xl mb-4 matrix-glow" />
+                <Eye className="text-purple-400 text-2xl mb-4 matrix-glow" />
                 <h3 className="text-xl font-semibold mb-3 matrix-text matrix-glow" data-testid="vision-title">Our Vision</h3>
                 <p className="text-slate-300 matrix-text" data-testid="vision-description">
                   To be the leading platform for computer science students to explore cutting-edge technologies, 
@@ -50,10 +41,10 @@ export default function AboutSection() {
             <Card className="cyberpunk-glow-card hover-lift relative">
               <div className="absolute inset-0 cyberpunk-scan-lines"></div>
               <CardContent className="p-6 relative z-10">
-                <Users className="text-green-300 text-2xl mb-4 matrix-glow" />
+                <Users className="text-purple-300 text-2xl mb-4 matrix-glow" />
                 <h3 className="text-xl font-semibold mb-3 matrix-text matrix-glow" data-testid="community-title">Our Community</h3>
                 <p className="text-slate-300 matrix-text" data-testid="community-description">
-                  Join <span className="text-green-500 font-semibold matrix-glow holographic-text">500+</span> passionate students and alumni 
+                  Join <span className="text-purple-500 font-semibold matrix-glow holographic-text">500+</span> passionate students and alumni 
                   who are shaping the future of technology through collaboration and innovation.
                 </p>
               </CardContent>

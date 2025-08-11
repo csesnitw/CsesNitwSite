@@ -19,8 +19,8 @@ export default function HeroSection() {
               <div className="absolute inset-0 cyberpunk-scan-lines"></div>
             </h1>
           </div>
-          <p className="text-xl md:text-2xl text-green-400 mb-8 max-w-3xl mx-auto matrix-text matrix-glow" data-testid="hero-subtitle">
-            Computer Science Engineers Society at National Institute of Technology Warangal
+          <p className="text-xl md:text-2xl text-purple-400 mb-8 max-w-3xl mx-auto matrix-text matrix-glow" data-testid="hero-subtitle">
+            Computer Science and Engineering Society at National Institute of Technology Warangal
           </p>
           <p className="text-lg text-slate-400 mb-12 max-w-2xl mx-auto matrix-text" data-testid="hero-description">
             Fostering innovation, collaboration, and technical excellence among aspiring computer scientists and engineers.
