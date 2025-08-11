@@ -7,42 +7,42 @@
 @tailwind utilities;
 
 :root {
-  --background: hsl(222, 47%, 11%);
-  --foreground: hsl(213, 31%, 91%);
-  --card: hsl(217, 33%, 17%);
-  --card-foreground: hsl(213, 31%, 91%);
-  --popover: hsl(222, 47%, 11%);
-  --popover-foreground: hsl(213, 31%, 91%);
-  --primary: hsl(244, 71%, 65%);
-  --primary-foreground: hsl(0, 0%, 100%);
-  --secondary: hsl(262, 76%, 70%);
+  --background: hsl(210, 40%, 98%);
+  --foreground: hsl(222, 84%, 15%);
+  --card: hsl(0, 0%, 100%);
+  --card-foreground: hsl(222, 84%, 15%);
+  --popover: hsl(0, 0%, 100%);
+  --popover-foreground: hsl(222, 84%, 15%);
+  --primary: hsl(221, 83%, 25%);
+  --primary-foreground: hsl(210, 40%, 98%);
+  --secondary: hsl(210, 16%, 45%);
   --secondary-foreground: hsl(0, 0%, 100%);
-  --muted: hsl(215, 28%, 17%);
-  --muted-foreground: hsl(217, 10%, 64%);
-  --accent: hsl(189, 94%, 42%);
+  --muted: hsl(210, 40%, 96%);
+  --muted-foreground: hsl(215, 16%, 47%);
+  --accent: hsl(215, 16%, 47%);
   --accent-foreground: hsl(0, 0%, 100%);
   --destructive: hsl(0, 63%, 31%);
   --destructive-foreground: hsl(0, 0%, 98%);
-  --border: hsl(217, 33%, 17%);
-  --input: hsl(215, 28%, 17%);
-  --ring: hsl(244, 71%, 65%);
-  --chart-1: hsl(244, 71%, 65%);
+  --border: hsl(214, 32%, 91%);
+  --input: hsl(214, 32%, 91%);
+  --ring: hsl(221, 83%, 25%);
+  --chart-1: hsl(221, 83%, 25%);
   --chart-2: hsl(159, 100%, 36%);
   --chart-3: hsl(42, 93%, 56%);
   --chart-4: hsl(147, 79%, 42%);
   --chart-5: hsl(341, 75%, 51%);
-  --sidebar: hsl(217, 33%, 17%);
-  --sidebar-foreground: hsl(213, 31%, 91%);
-  --sidebar-primary: hsl(244, 71%, 65%);
-  --sidebar-primary-foreground: hsl(0, 0%, 100%);
-  --sidebar-accent: hsl(217, 33%, 17%);
-  --sidebar-accent-foreground: hsl(244, 71%, 65%);
-  --sidebar-border: hsl(217, 33%, 17%);
-  --sidebar-ring: hsl(244, 71%, 65%);
-  --font-sans: 'Share Tech Mono', 'Inter', monospace;
-  --font-serif: 'Orbitron', Georgia, serif;
-  --font-mono: 'Share Tech Mono', 'Courier New', monospace;
-  --radius: 0.75rem;
+  --sidebar: hsl(0, 0%, 100%);
+  --sidebar-foreground: hsl(222, 84%, 15%);
+  --sidebar-primary: hsl(221, 83%, 25%);
+  --sidebar-primary-foreground: hsl(210, 40%, 98%);
+  --sidebar-accent: hsl(210, 40%, 96%);
+  --sidebar-accent-foreground: hsl(221, 83%, 25%);
+  --sidebar-border: hsl(214, 32%, 91%);
+  --sidebar-ring: hsl(221, 83%, 25%);
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-serif: 'Inter', Georgia, serif;
+  --font-mono: 'Inter', 'Courier New', monospace;
+  --radius: 0.5rem;
 }
 
 .dark {
@@ -86,14 +86,14 @@
   top: 0;
   left: 0;
   z-index: -1;
-  background: linear-gradient(135deg, hsl(222, 47%, 11%) 0%, hsl(217, 33%, 17%) 100%);
+  background: linear-gradient(135deg, hsl(210, 40%, 98%) 0%, hsl(210, 40%, 96%) 100%);
 }
 
 /* Glass Card Effect */
 .glass-card {
-  background: rgba(30, 41, 59, 0.7);
+  background: rgba(255, 255, 255, 0.8);
   backdrop-filter: blur(10px);
-  border: 1px solid rgba(148, 163, 184, 0.1);
+  border: 1px solid rgba(226, 232, 240, 0.5);
 }
 
 /* Hover Lift Animation */
@@ -108,8 +108,8 @@
 
 /* Terminal Styles */
 .terminal {
-  background: rgba(15, 23, 42, 0.95);
-  border: 1px solid hsl(217, 33%, 17%);
+  background: rgba(248, 250, 252, 0.95);
+  border: 1px solid hsl(214, 32%, 91%);
   font-family: var(--font-mono);
 }
 
@@ -132,89 +132,66 @@
   51%, 100% { opacity: 0; }
 }
 
-/* Gradient Text */
-.gradient-text {
-  background: linear-gradient(135deg, #a855f7 0%, #7c3aed 50%, #6b46c1 100%);
+/* Minimal Gradient Text */
+.minimal-gradient-text {
+  background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  font-family: 'Orbitron', monospace;
-  font-weight: 900;
-  text-shadow: 0 0 10px rgba(168, 85, 247, 0.2);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: 700;
 }
 
-/* Matrix-style text effects */
-.matrix-text {
-  font-family: 'Share Tech Mono', monospace;
-  color: #a855f7;
-  text-shadow: 0 0 3px rgba(168, 85, 247, 0.3);
+/* Modern text styles */
+.modern-text {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  color: #1e293b;
 }
 
-/* Matrix glow effect */
-.matrix-glow {
-  text-shadow: 
-    0 0 3px #a855f7,
-    0 0 6px #a855f7,
-    0 0 9px #a855f7;
+.modern-accent {
+  color: #475569;
 }
 
-/* Cyberpunk neon effects */
-.cyberpunk-border {
-  border: 1px solid #6b46c1;
+/* Minimal card styles */
+.minimal-border {
+  border: 1px solid #e2e8f0;
+  transition: border-color 0.2s ease;
+}
+
+.minimal-border:hover {
+  border-color: #cbd5e1;
+}
+
+.minimal-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
   box-shadow: 
-    0 0 5px rgba(107, 70, 193, 0.2),
-    inset 0 0 5px rgba(107, 70, 193, 0.05);
+    0 1px 3px 0 rgba(0, 0, 0, 0.1),
+    0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  transition: all 0.2s ease;
 }
 
-.cyberpunk-glow-card {
-  background: linear-gradient(145deg, rgba(0, 0, 0, 0.9), rgba(30, 30, 30, 0.8));
-  border: 1px solid rgba(107, 70, 193, 0.2);
+.minimal-card:hover {
   box-shadow: 
-    0 4px 15px rgba(107, 70, 193, 0.05),
-    inset 0 1px 0 rgba(168, 85, 247, 0.1);
+    0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  transform: translateY(-1px);
 }
 
-.cyberpunk-scan-lines::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: repeating-linear-gradient(
-    0deg,
-    transparent,
-    transparent 2px,
-    rgba(168, 85, 247, 0.02) 2px,
-    rgba(168, 85, 247, 0.02) 4px
-  );
-  pointer-events: none;
+/* Remove scan lines for minimal design */
+
+/* Minimal button effects */
+.minimal-button {
+  background: #1e293b;
+  border: 1px solid #334155;
+  color: #ffffff;
+  transition: all 0.2s ease;
 }
 
-/* Futuristic button effects */
-.futuristic-button {
-  background: linear-gradient(45deg, rgba(168, 85, 247, 0.1), rgba(147, 51, 234, 0.2));
-  border: 1px solid #6b46c1;
-  position: relative;
-  overflow: hidden;
-}
-
-.futuristic-button::before {
-  content: '';
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  right: -2px;
-  bottom: -2px;
-  background: linear-gradient(45deg, #6b46c1, #7c3aed, #6b46c1);
-  z-index: -1;
-  border-radius: inherit;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.futuristic-button:hover::before {
-  opacity: 1;
+.minimal-button:hover {
+  background: #334155;
+  border-color: #475569;
+  transform: translateY(-1px);
 }
 
 /* Data stream animation */
@@ -232,29 +209,12 @@
   }
 }
 
-.data-stream {
-  position: fixed;
-  width: 2px;
-  height: 100px;
-  background: linear-gradient(to bottom, transparent, #a855f7, transparent);
-  animation: data-stream 3s linear infinite;
-  pointer-events: none;
-}
+/* Remove data stream for minimal design */
 
-/* Holographic text effect */
-.holographic-text {
-  background: linear-gradient(
-    45deg,
-    #a855f7 0%,
-    #8b5cf6 25%,
-    #7c3aed 50%,
-    #8b5cf6 75%,
-    #a855f7 100%
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  animation: holographic-shift 2s ease-in-out infinite alternate;
+/* Minimal accent text */
+.minimal-accent-text {
+  color: #1e293b;
+  font-weight: 600;
 }
 
 @keyframes holographic-shift {

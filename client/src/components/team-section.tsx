@@ -19,42 +19,39 @@ export default function TeamSection() {
   }
 
   const getPositionColor = (position: string) => {
-    if (position.includes('President') || position.includes('General Secretary')) return 'text-purple-500 matrix-glow holographic-text';
-    if (position.includes('Vice')) return 'text-purple-400 matrix-glow';
-    if (position.includes('Technical')) return 'text-purple-300 matrix-glow';
-    if (position.includes('Events')) return 'text-purple-400 matrix-glow';
-    if (position.includes('Design')) return 'text-purple-300 matrix-glow';
-    if (position.includes('Outreach')) return 'text-purple-400 matrix-glow';
-    return 'text-purple-500 matrix-glow';
+    if (position.includes('President') || position.includes('General Secretary')) return 'text-slate-700 minimal-accent-text';
+    if (position.includes('Vice')) return 'text-slate-600';
+    if (position.includes('Technical')) return 'text-slate-600';
+    if (position.includes('Events')) return 'text-slate-600';
+    if (position.includes('Design')) return 'text-slate-600';
+    if (position.includes('Outreach')) return 'text-slate-600';
+    return 'text-slate-600';
   };
 
   return (
     <section id="team" className="py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold mb-4 matrix-text matrix-glow" data-testid="team-title">Our Team</h2>
-          <p className="text-xl text-slate-400 matrix-text" data-testid="team-subtitle">
+          <h2 className="text-4xl font-bold mb-4 modern-text" data-testid="team-title">Our Team</h2>
+          <p className="text-xl text-slate-500 modern-text" data-testid="team-subtitle">
             Meet the passionate individuals driving CSES NITW forward.
           </p>
         </div>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {teamMembers.map((member) => (
-            <Card key={member.id} className="cyberpunk-glow-card text-center hover-lift relative">
-              <div className="absolute inset-0 cyberpunk-scan-lines"></div>
-              <CardContent className="p-6 relative z-10">
-                <div className="relative inline-block">
-                  <div className="w-24 h-24 rounded-full mx-auto mb-4 bg-gradient-to-br from-purple-900 to-black flex items-center justify-center cyberpunk-border">
-                    <Users className="text-purple-400 text-3xl" />
-                  </div>
+            <Card key={member.id} className="minimal-card text-center">
+              <CardContent className="p-6">
+                <div className="w-24 h-24 rounded-full mx-auto mb-4 bg-gradient-to-br from-slate-100 to-slate-200 flex items-center justify-center minimal-border">
+                  <Users className="text-slate-500 text-3xl" />
                 </div>
-                <h4 className="text-xl font-semibold mb-2 matrix-text matrix-glow" data-testid={`member-name-${member.id}`}>
+                <h4 className="text-xl font-semibold mb-2 modern-text" data-testid={`member-name-${member.id}`}>
                   {member.name}
                 </h4>
-                <p className={`mb-2 matrix-text ${getPositionColor(member.position)}`} data-testid={`member-position-${member.id}`}>
+                <p className={`mb-2 modern-text ${getPositionColor(member.position)}`} data-testid={`member-position-${member.id}`}>
                   {member.position}
                 </p>
-                <p className="text-sm text-slate-400 mb-4 matrix-text" data-testid={`member-year-${member.id}`}>
+                <p className="text-sm text-slate-500 mb-4 modern-text" data-testid={`member-year-${member.id}`}>
                   {member.year}
                 </p>
                 <div className="flex justify-center space-x-3">
