@@ -19,7 +19,7 @@ export default function TeamSection() {
   }
 
   const getPositionColor = (position: string) => {
-    if (position.includes('President')) return 'text-green-500 matrix-glow';
+    if (position.includes('President') || position.includes('General Secretary')) return 'text-green-500 matrix-glow holographic-text';
     if (position.includes('Vice')) return 'text-green-400 matrix-glow';
     if (position.includes('Technical')) return 'text-green-300 matrix-glow';
     if (position.includes('Events')) return 'text-green-400 matrix-glow';
@@ -40,15 +40,18 @@ export default function TeamSection() {
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {teamMembers.map((member) => (
-            <Card key={member.id} className="glass-card text-center hover-lift">
-              <CardContent className="p-6">
-                <img 
-                  src={member.imageUrl || "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=300"} 
-                  alt={`${member.name} profile`} 
-                  className="w-24 h-24 rounded-full mx-auto mb-4 object-cover"
-                  data-testid={`member-image-${member.id}`}
-                />
-                <h4 className="text-xl font-semibold mb-2 matrix-text" data-testid={`member-name-${member.id}`}>
+            <Card key={member.id} className="cyberpunk-glow-card text-center hover-lift relative">
+              <div className="absolute inset-0 cyberpunk-scan-lines"></div>
+              <CardContent className="p-6 relative z-10">
+                <div className="relative inline-block">
+                  <img 
+                    src={member.imageUrl || "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=300"} 
+                    alt={`${member.name} profile`} 
+                    className="w-24 h-24 rounded-full mx-auto mb-4 object-cover cyberpunk-border"
+                    data-testid={`member-image-${member.id}`}
+                  />
+                </div>
+                <h4 className="text-xl font-semibold mb-2 matrix-text matrix-glow" data-testid={`member-name-${member.id}`}>
                   {member.name}
                 </h4>
                 <p className={`mb-2 matrix-text ${getPositionColor(member.position)}`} data-testid={`member-position-${member.id}`}>

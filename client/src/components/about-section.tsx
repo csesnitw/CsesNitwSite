@@ -23,10 +23,11 @@ export default function AboutSection() {
           </div>
           
           <div className="space-y-6">
-            <Card className="glass-card hover-lift">
-              <CardContent className="p-6">
+            <Card className="cyberpunk-glow-card hover-lift relative">
+              <div className="absolute inset-0 cyberpunk-scan-lines"></div>
+              <CardContent className="p-6 relative z-10">
                 <Target className="text-green-500 text-2xl mb-4 matrix-glow" />
-                <h3 className="text-xl font-semibold mb-3 matrix-text" data-testid="mission-title">Our Mission</h3>
+                <h3 className="text-xl font-semibold mb-3 matrix-text matrix-glow" data-testid="mission-title">Our Mission</h3>
                 <p className="text-slate-300 matrix-text" data-testid="mission-description">
                   To create a vibrant community of computer science enthusiasts, fostering technical excellence, 
                   innovation, and collaborative learning at NIT Warangal.
@@ -34,10 +35,11 @@ export default function AboutSection() {
               </CardContent>
             </Card>
             
-            <Card className="glass-card hover-lift">
-              <CardContent className="p-6">
+            <Card className="cyberpunk-glow-card hover-lift relative">
+              <div className="absolute inset-0 cyberpunk-scan-lines"></div>
+              <CardContent className="p-6 relative z-10">
                 <Eye className="text-green-400 text-2xl mb-4 matrix-glow" />
-                <h3 className="text-xl font-semibold mb-3 matrix-text" data-testid="vision-title">Our Vision</h3>
+                <h3 className="text-xl font-semibold mb-3 matrix-text matrix-glow" data-testid="vision-title">Our Vision</h3>
                 <p className="text-slate-300 matrix-text" data-testid="vision-description">
                   To be the leading platform for computer science students to explore cutting-edge technologies, 
                   build meaningful connections, and develop industry-ready skills.
@@ -45,12 +47,13 @@ export default function AboutSection() {
               </CardContent>
             </Card>
             
-            <Card className="glass-card hover-lift">
-              <CardContent className="p-6">
+            <Card className="cyberpunk-glow-card hover-lift relative">
+              <div className="absolute inset-0 cyberpunk-scan-lines"></div>
+              <CardContent className="p-6 relative z-10">
                 <Users className="text-green-300 text-2xl mb-4 matrix-glow" />
-                <h3 className="text-xl font-semibold mb-3 matrix-text" data-testid="community-title">Our Community</h3>
+                <h3 className="text-xl font-semibold mb-3 matrix-text matrix-glow" data-testid="community-title">Our Community</h3>
                 <p className="text-slate-300 matrix-text" data-testid="community-description">
-                  Join <span className="text-green-500 font-semibold matrix-glow">500+</span> passionate students and alumni 
+                  Join <span className="text-green-500 font-semibold matrix-glow holographic-text">500+</span> passionate students and alumni 
                   who are shaping the future of technology through collaboration and innovation.
                 </p>
               </CardContent>

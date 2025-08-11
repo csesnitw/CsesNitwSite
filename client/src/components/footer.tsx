@@ -18,8 +18,8 @@ export default function Footer() {
 
 
   const socialLinks = [
-    { icon: FaLinkedin, href: "#", testId: "footer-linkedin" },
-    { icon: FaGithub, href: "#", testId: "footer-github" },
+    { icon: FaLinkedin, href: "https://www.linkedin.com/company/cses-nitw", testId: "footer-linkedin" },
+    { icon: FaGithub, href: "https://github.com/csesnitw", testId: "footer-github" },
   ];
 
   return (
@@ -71,7 +71,7 @@ export default function Footer() {
         
         <div className="border-t border-border mt-8 pt-8 text-center text-slate-400">
           <p data-testid="footer-copyright" className="matrix-text">
-            &copy; 2024 Computer Science Engineers Society, NIT Warangal. All rights reserved.
+            &copy; 2025 Computer Science and Engineering Society, NIT Warangal. All rights reserved.
           </p>
         </div>
       </div>
