@@ -70,7 +70,7 @@ export default function Footer() {
         </div>
         
         <div className="border-t border-border mt-8 pt-8 text-center text-slate-400">
-          <p data-testid="footer-copyright" className="matrix-text">
+          <p data-testid="footer-copyright" className="">
             &copy; 2025 Computer Science and Engineering Society, NIT Warangal. All rights reserved.
           </p>
         </div>

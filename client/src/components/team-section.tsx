@@ -32,8 +32,8 @@ export default function TeamSection() {
     <section id="team" className="py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold mb-4 matrix-text matrix-glow" data-testid="team-title">Our Team</h2>
-          <p className="text-xl text-slate-400 matrix-text" data-testid="team-subtitle">
+          <h2 className="text-4xl font-bold mb-4 matrix-glow" data-testid="team-title">Our Team</h2>
+          <p className="text-xl text-slate-400" data-testid="team-subtitle">
             Meet the passionate individuals driving CSES NITW forward.
           </p>
         </div>
@@ -48,13 +48,13 @@ export default function TeamSection() {
                     <Users className="text-green-400 text-3xl" />
                   </div>
                 </div>
-                <h4 className="text-xl font-semibold mb-2 matrix-text matrix-glow" data-testid={`member-name-${member.id}`}>
+                <h4 className="text-xl font-semibold mb-2 matrix-glow" data-testid={`member-name-${member.id}`}>
                   {member.name}
                 </h4>
-                <p className={`mb-2 matrix-text ${getPositionColor(member.position)}`} data-testid={`member-position-${member.id}`}>
+                <p className={`mb-2 ${getPositionColor(member.position)}`} data-testid={`member-position-${member.id}`}>
                   {member.position}
                 </p>
-                <p className="text-sm text-slate-400 mb-4 matrix-text" data-testid={`member-year-${member.id}`}>
+                <p className="text-sm text-slate-400 mb-4" data-testid={`member-year-${member.id}`}>
                   {member.year}
                 </p>
                 <div className="flex justify-center space-x-3">

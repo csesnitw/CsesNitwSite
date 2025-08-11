@@ -19,10 +19,10 @@ export default function HeroSection() {
               <div className="absolute inset-0 cyberpunk-scan-lines"></div>
             </h1>
           </div>
-          <p className="text-xl md:text-2xl text-green-400 mb-8 max-w-3xl mx-auto matrix-text matrix-glow" data-testid="hero-subtitle">
+          <p className="text-xl md:text-2xl text-green-400 mb-8 max-w-3xl mx-auto matrix-glow" data-testid="hero-subtitle">
             Computer Science and Engineering Society at National Institute of Technology Warangal
           </p>
-          <p className="text-lg text-slate-400 mb-12 max-w-2xl mx-auto matrix-text" data-testid="hero-description">
+          <p className="text-lg text-slate-400 mb-12 max-w-2xl mx-auto" data-testid="hero-description">
             Fostering innovation, collaboration, and technical excellence among aspiring computer scientists and engineers.
           </p>
           
@@ -30,7 +30,7 @@ export default function HeroSection() {
             <Button 
               variant="outline"
               size="lg"
-              className="px-8 py-3 matrix-text futuristic-button cyberpunk-border"
+              className="px-8 py-3 futuristic-button cyberpunk-border"
               onClick={() => scrollToSection('contact')}
               data-testid="button-get-in-touch"
             >
