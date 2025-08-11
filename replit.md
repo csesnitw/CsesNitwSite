@@ -1,10 +1,11 @@
 # Overview
 
-This is a full-stack web application for the Computer Science Engineers Society (CSES) at NIT Warangal. The application serves as a digital presence for the student society, featuring a modern, interactive website with a live terminal feed, event management, team showcase, and contact functionality. Built with a React frontend and Express backend, it demonstrates modern web development practices with a focus on user experience and real-time updates.
+This is a full-stack web application for the Computer Science Engineers Society (CSES) at NIT Warangal. The application serves as a digital presence for the student society, featuring a Matrix-inspired design with interactive particle effects, live terminal feed, team showcase, and contact functionality. Built with a React frontend and Express backend, it demonstrates modern web development practices with a focus on Matrix-style aesthetics and real-time updates.
 
 # User Preferences
 
 Preferred communication style: Simple, everyday language.
+Design preferences: Matrix-inspired design with green color scheme, monospace fonts, and tech aesthetics.
 
 # System Architecture
 
@@ -53,6 +54,7 @@ Preferred communication style: Simple, everyday language.
 - **Radix UI**: Unstyled, accessible UI components
 - **Lucide React**: Icon library for consistent iconography
 - **React Icons**: Extended icon set including brand icons
+- **Matrix Theme**: Custom Matrix-inspired design with green color palette, Share Tech Mono and Orbitron fonts
 
 ## State Management & Data Fetching
 - **TanStack Query**: Server state management with caching and synchronization

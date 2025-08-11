@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -37,9 +39,9 @@
   --sidebar-accent-foreground: hsl(244, 71%, 65%);
   --sidebar-border: hsl(217, 33%, 17%);
   --sidebar-ring: hsl(244, 71%, 65%);
-  --font-sans: 'Inter', system-ui, sans-serif;
-  --font-serif: Georgia, serif;
-  --font-mono: 'Courier New', monospace;
+  --font-sans: 'Share Tech Mono', 'Inter', monospace;
+  --font-serif: 'Orbitron', Georgia, serif;
+  --font-mono: 'Share Tech Mono', 'Courier New', monospace;
   --radius: 0.75rem;
 }
 
@@ -132,10 +134,28 @@
 
 /* Gradient Text */
 .gradient-text {
-  background: linear-gradient(135deg, hsl(244, 71%, 65%) 0%, hsl(262, 76%, 70%) 50%, hsl(189, 94%, 42%) 100%);
+  background: linear-gradient(135deg, #00ff00 0%, #00cc00 50%, #008800 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  font-family: 'Orbitron', monospace;
+  font-weight: 900;
+  text-shadow: 0 0 10px rgba(0, 255, 0, 0.3);
+}
+
+/* Matrix-style text effects */
+.matrix-text {
+  font-family: 'Share Tech Mono', monospace;
+  color: #00ff00;
+  text-shadow: 0 0 5px rgba(0, 255, 0, 0.5);
+}
+
+/* Matrix glow effect */
+.matrix-glow {
+  text-shadow: 
+    0 0 5px #00ff00,
+    0 0 10px #00ff00,
+    0 0 15px #00ff00;
 }
 
 /* Smooth Scrolling */

@@ -23,23 +23,15 @@ export default function HeroSection() {
             Fostering innovation, collaboration, and technical excellence among aspiring computer scientists and engineers.
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button 
-              size="lg"
-              className="px-8 py-3 bg-primary hover:bg-primary/90"
-              onClick={() => scrollToSection('contact')}
-              data-testid="button-join-community"
-            >
-              Join Our Community
-            </Button>
+          <div className="flex justify-center">
             <Button 
               variant="outline"
               size="lg"
-              className="px-8 py-3"
-              onClick={() => scrollToSection('events')}
-              data-testid="button-explore-events"
+              className="px-8 py-3 matrix-text border-green-500 hover:bg-green-500/10"
+              onClick={() => scrollToSection('contact')}
+              data-testid="button-get-in-touch"
             >
-              Explore Events
+              Get In Touch
             </Button>
           </div>
         </div>

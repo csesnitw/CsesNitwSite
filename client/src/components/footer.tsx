@@ -11,7 +11,6 @@ export default function Footer() {
 
   const quickLinks = [
     { href: "about", label: "About Us" },
-    { href: "events", label: "Events" },
     { href: "team", label: "Team" },
     { href: "contact", label: "Contact" },
   ];
@@ -36,10 +35,10 @@ export default function Footer() {
         <div className="grid md:grid-cols-4 gap-8">
           <div className="col-span-2">
             <div className="flex items-center space-x-2 mb-4" data-testid="footer-logo">
-              <Code className="text-primary text-2xl" />
-              <h3 className="text-xl font-bold">CSES NITW</h3>
+              <Code className="text-green-500 text-2xl matrix-glow" />
+              <h3 className="text-xl font-bold matrix-text">CSES NITW</h3>
             </div>
-            <p className="text-slate-400 mb-4 max-w-md" data-testid="footer-description">
+            <p className="text-slate-400 mb-4 max-w-md matrix-text" data-testid="footer-description">
               Empowering computer science students at NIT Warangal through innovation, 
               collaboration, and technical excellence.
             </p>
@@ -48,7 +47,7 @@ export default function Footer() {
                 <a
                   key={index}
                   href={social.href}
-                  className="text-slate-400 hover:text-primary transition-colors"
+                  className="text-slate-400 hover:text-green-400 transition-colors"
                   data-testid={social.testId}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -60,13 +59,13 @@ export default function Footer() {
           </div>
           
           <div>
-            <h4 className="font-semibold mb-4" data-testid="quick-links-title">Quick Links</h4>
+            <h4 className="font-semibold mb-4 matrix-text" data-testid="quick-links-title">Quick Links</h4>
             <ul className="space-y-2 text-slate-400">
               {quickLinks.map((link) => (
                 <li key={link.href}>
                   <button
                     onClick={() => scrollToSection(link.href)}
-                    className="hover:text-primary transition-colors"
+                    className="hover:text-green-400 transition-colors matrix-text"
                     data-testid={`footer-link-${link.label.toLowerCase().replace(' ', '-')}`}
                   >
                     {link.label}
@@ -77,13 +76,13 @@ export default function Footer() {
           </div>
           
           <div>
-            <h4 className="font-semibold mb-4" data-testid="resources-title">Resources</h4>
+            <h4 className="font-semibold mb-4 matrix-text" data-testid="resources-title">Resources</h4>
             <ul className="space-y-2 text-slate-400">
               {resources.map((resource) => (
                 <li key={resource.label}>
                   <a
                     href={resource.href}
-                    className="hover:text-primary transition-colors"
+                    className="hover:text-green-400 transition-colors matrix-text"
                     data-testid={`footer-resource-${resource.label.toLowerCase()}`}
                   >
                     {resource.label}
@@ -95,7 +94,7 @@ export default function Footer() {
         </div>
         
         <div className="border-t border-border mt-8 pt-8 text-center text-slate-400">
-          <p data-testid="footer-copyright">
+          <p data-testid="footer-copyright" className="matrix-text">
             &copy; 2024 Computer Science Engineers Society, NIT Warangal. All rights reserved.
           </p>
         </div>
