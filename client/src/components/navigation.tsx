@@ -25,8 +25,8 @@ export default function Navigation() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           <div className="flex items-center space-x-2" data-testid="logo">
-            <Code className="text-slate-700 text-2xl" />
-            <h1 className="text-xl font-bold modern-text">CSES NITW</h1>
+            <Code className="text-green-500 text-2xl matrix-glow" />
+            <h1 className="text-xl font-bold matrix-text">CSES NITW</h1>
           </div>
           
           {/* Desktop Navigation */}
@@ -35,7 +35,7 @@ export default function Navigation() {
               <button
                 key={item.href}
                 onClick={() => scrollToSection(item.href)}
-                className="hover:text-slate-600 transition-colors modern-text"
+                className="hover:text-green-400 transition-colors matrix-text"
                 data-testid={`nav-${item.label.toLowerCase()}`}
               >
                 {item.label}
@@ -63,7 +63,7 @@ export default function Navigation() {
                 <button
                   key={item.href}
                   onClick={() => scrollToSection(item.href)}
-                  className="block w-full text-left px-3 py-2 hover:text-slate-600 transition-colors modern-text"
+                  className="block w-full text-left px-3 py-2 hover:text-green-400 transition-colors matrix-text"
                   data-testid={`mobile-nav-${item.label.toLowerCase()}`}
                 >
                   {item.label}

@@ -19,7 +19,7 @@ export default function ParticlesBackground() {
             }
           },
           color: {
-            value: '#cbd5e1'
+            value: '#00ff41'
           },
           shape: {
             type: 'circle',
@@ -45,8 +45,8 @@ export default function ParticlesBackground() {
           line_linked: {
             enable: true,
             distance: 150,
-            color: '#cbd5e1',
-            opacity: 0.1,
+            color: '#00ff41',
+            opacity: 0.2,
             width: 1
           },
           move: {

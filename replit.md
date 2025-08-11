@@ -5,7 +5,7 @@ This is a full-stack web application for the Computer Science Engineers Society 
 # User Preferences
 
 Preferred communication style: Simple, everyday language.
-Design preferences: Matrix-inspired design with green color scheme, monospace fonts, and tech aesthetics.
+Design preferences: Matrix-inspired cyberpunk design with green neon color scheme (#00ff41), glowing text effects, Share Tech Mono fonts, dark backgrounds, and cyberpunk aesthetics. User strongly prefers the Matrix theme over minimal designs.
 
 # System Architecture
 
