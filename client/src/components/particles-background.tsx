@@ -91,7 +91,7 @@ export default function ParticlesBackground() {
               duration: 0.4
             },
             push: {
-              particles_nb: 4
+              particles_nb: 10
             },
             remove: {
               particles_nb: 2

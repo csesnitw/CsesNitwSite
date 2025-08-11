@@ -1,5 +1,5 @@
 import { Code } from "lucide-react";
-import { FaDiscord, FaLinkedin, FaGithub, FaTwitter } from "react-icons/fa";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 export default function Footer() {
   const scrollToSection = (sectionId: string) => {
@@ -15,25 +15,18 @@ export default function Footer() {
     { href: "contact", label: "Contact" },
   ];
 
-  const resources = [
-    { href: "#", label: "Blog" },
-    { href: "#", label: "Workshops" },
-    { href: "#", label: "Projects" },
-    { href: "#", label: "Alumni" },
-  ];
+
 
   const socialLinks = [
-    { icon: FaDiscord, href: "#", testId: "footer-discord" },
     { icon: FaLinkedin, href: "#", testId: "footer-linkedin" },
     { icon: FaGithub, href: "#", testId: "footer-github" },
-    { icon: FaTwitter, href: "#", testId: "footer-twitter" },
   ];
 
   return (
     <footer className="bg-background border-t border-border py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid md:grid-cols-4 gap-8">
-          <div className="col-span-2">
+        <div className="grid md:grid-cols-2 gap-8">
+          <div>
             <div className="flex items-center space-x-2 mb-4" data-testid="footer-logo">
               <Code className="text-green-500 text-2xl matrix-glow" />
               <h3 className="text-xl font-bold matrix-text">CSES NITW</h3>
@@ -70,23 +63,6 @@ export default function Footer() {
                   >
                     {link.label}
                   </button>
-                </li>
-              ))}
-            </ul>
-          </div>
-          
-          <div>
-            <h4 className="font-semibold mb-4 matrix-text" data-testid="resources-title">Resources</h4>
-            <ul className="space-y-2 text-slate-400">
-              {resources.map((resource) => (
-                <li key={resource.label}>
-                  <a
-                    href={resource.href}
-                    className="hover:text-green-400 transition-colors matrix-text"
-                    data-testid={`footer-resource-${resource.label.toLowerCase()}`}
-                  >
-                    {resource.label}
-                  </a>
                 </li>
               ))}
             </ul>
