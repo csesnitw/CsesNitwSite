@@ -3,6 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Users, Linkedin, Github, Twitter } from "lucide-react";
 import Navigation from "@/components/navigation";
 import Footer from "@/components/footer";
+import ParticlesBackground from "@/components/particles-background";
 
 type Member = {
   id: string;
@@ -56,6 +57,7 @@ export default function TeamPage() {
 
   return (
     <div className="min-h-screen pt-24 pb-16 px-4">
+      <ParticlesBackground />
       <Navigation />
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
