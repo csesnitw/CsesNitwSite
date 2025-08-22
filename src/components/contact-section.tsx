@@ -12,7 +12,7 @@ export default function ContactSection() {
     <section id="contact" className="py-20 bg-muted/30">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold mb-4 matrix-glow" data-testid="contact-title">Get In Touch</h2>
+          <h2 className="text-4xl font-bold mb-4 " data-testid="contact-title">Get In Touch</h2>
           <p className="text-xl text-slate-400" data-testid="contact-subtitle">
             Connect with our community and stay updated with the latest opportunities.
           </p>
@@ -21,7 +21,7 @@ export default function ContactSection() {
         <div className="max-w-2xl mx-auto">
           <div className="space-y-8">
             <div className="flex items-start space-x-4">
-              <MapPin className="text-green-500 text-xl mt-1 matrix-glow" />
+              <MapPin className="text-green-500 text-xl mt-1 " />
               <div>
                 <h4 className="font-semibold mb-2" data-testid="location-title">Location</h4>
                 <p className="text-slate-400" data-testid="location-address">
@@ -33,7 +33,7 @@ export default function ContactSection() {
             </div>
             
             <div className="flex items-start space-x-4">
-              <Mail className="text-green-400 text-xl mt-1 matrix-glow" />
+              <Mail className="text-green-400 text-xl mt-1 " />
               <div>
                 <h4 className="font-semibold mb-2" data-testid="email-title">Email</h4>
                 <p className="text-slate-400">
@@ -49,7 +49,7 @@ export default function ContactSection() {
             </div>
             
             <div className="flex items-start space-x-4">
-              <Users className="text-green-300 text-xl mt-1 matrix-glow" />
+              <Users className="text-green-300 text-xl mt-1 " />
               <div>
                 <h4 className="font-semibold mb-2" data-testid="community-title">Connect With Us</h4>
                 <div className="flex space-x-4 mt-3">

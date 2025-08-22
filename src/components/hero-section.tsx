@@ -13,13 +13,15 @@ export default function HeroSection() {
     <section id="home" className="min-h-screen flex items-center justify-center pt-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="mb-8">
-          <div className="relative">
-            <h1 className="text-5xl md:text-7xl font-bold mb-6 holographic-text relative" data-testid="hero-title">
-              CSES NITW
-              <div className="absolute inset-0 cyberpunk-scan-lines"></div>
-            </h1>
+          <div className="flex justify-center mb-6">
+            <img
+              src="/src/cses_black.svg"
+              alt="CSES NITW logo"
+              className="scale-50"
+              data-testid="hero-logo"
+            />
           </div>
-          <p className="text-xl md:text-2xl text-green-400 mb-8 max-w-3xl mx-auto matrix-glow" data-testid="hero-subtitle">
+          <p className="text-xl md:text-2xl text-green-400 mb-8 max-w-3xl mx-auto " data-testid="hero-subtitle">
             Computer Science and Engineering Society at National Institute of Technology Warangal
           </p>
           <p className="text-lg text-slate-400 mb-12 max-w-2xl mx-auto" data-testid="hero-description">

@@ -56,54 +56,61 @@ export default function TeamPage() {
   );
 
   return (
-    <div className="min-h-screen pt-24 pb-16 px-4">
-      <ParticlesBackground />
-      <Navigation />
-      <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold matrix-glow">Our Team</h1>
-          <p className="text-xl text-slate-400 mt-2">Meet the people driving CSES NITW forward.</p>
-        </div>
-
-        {/* General Secretaries row - centered and bigger */}
-        {leaders.length > 0 && (
-          <div className="mb-14">
-            <div className="grid place-items-center gap-8 sm:grid-cols-2">
-              {leaders.map((m) => (
-                <Card key={m.id} className="w-full max-w-xl glass-card hover-lift text-center">
-                  <CardContent className="p-8">
-                    <div className="w-28 h-28 rounded-full mx-auto mb-4 bg-gradient-to-br from-green-900 to-black flex items-center justify-center">
-                      <Users className="text-green-400 text-3xl" />
-                    </div>
-                    <h2 className="text-2xl font-semibold matrix-glow">{m.name}</h2>
-                    <p className="text-green-400 matrix-glow mt-1">{m.position}</p>
-                    <p className="text-sm text-slate-400 mt-1">{m.year}</p>
-                    <Social m={m} />
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
+    <div className="min-h-screen">
+      <div className="pt-24 pb-16 px-4">
+        <ParticlesBackground />
+        <Navigation />
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-12">
+            <h1 className="text-4xl font-bold ">Our Team</h1>
+            <p className="text-xl text-slate-400 mt-2">
+              Meet the people driving CSES NITW forward.
+            </p>
           </div>
-        )}
 
-        {/* Rest of the team in a responsive grid */}
-        <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
-          {rest.map((m) => (
-            <Card key={m.id} className="glass-card hover-lift text-center">
-              <CardContent className="p-6">
-                <div className="w-24 h-24 rounded-full mx-auto mb-4 bg-gradient-to-br from-green-900 to-black flex items-center justify-center">
-                  <Users className="text-green-400 text-3xl" />
-                </div>
-                <h3 className="text-xl font-semibold matrix-glow">{m.name}</h3>
-                <p className="text-green-300 matrix-glow mt-1">{m.position}</p>
-                <p className="text-sm text-slate-400 mt-1">{m.year}</p>
-                <Social m={m} />
-              </CardContent>
-            </Card>
-          ))}
+          {/* General Secretaries row - centered and bigger */}
+          {leaders.length > 0 && (
+            <div className="mb-14">
+              <div className="grid place-items-center gap-8 sm:grid-cols-2">
+                {leaders.map((m) => (
+                  <Card
+                    key={m.id}
+                    className="w-full max-w-xl glass-card hover-lift text-center"
+                  >
+                    <CardContent className="p-8">
+                      <div className="w-28 h-28 rounded-full mx-auto mb-4 bg-gradient-to-br from-green-900 to-black flex items-center justify-center">
+                        <Users className="text-green-400 text-3xl" />
+                      </div>
+                      <h2 className="text-2xl font-semibold ">{m.name}</h2>
+                      <p className="text-green-400  mt-1">{m.position}</p>
+                      <p className="text-sm text-slate-400 mt-1">{m.year}</p>
+                      <Social m={m} />
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {/* Rest of the team in a responsive grid */}
+          <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+            {rest.map((m) => (
+              <Card key={m.id} className="glass-card hover-lift text-center">
+                <CardContent className="p-6">
+                  <div className="w-24 h-24 rounded-full mx-auto mb-4 bg-gradient-to-br from-green-900 to-black flex items-center justify-center">
+                    <Users className="text-green-400 text-3xl" />
+                  </div>
+                  <h3 className="text-xl font-semibold ">{m.name}</h3>
+                  <p className="text-green-300  mt-1">{m.position}</p>
+                  <p className="text-sm text-slate-400 mt-1">{m.year}</p>
+                  <Social m={m} />
+                </CardContent>
+              </Card>
+            ))}
+          </div>
         </div>
       </div>
-  <Footer />
+      <Footer />
     </div>
   );
 }

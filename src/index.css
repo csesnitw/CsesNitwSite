@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Intel+One+Mono:ital,wght@0,300..700;1,300..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap');
 
@@ -39,9 +39,9 @@
   --sidebar-accent-foreground: hsl(142, 71%, 45%);
   --sidebar-border: hsl(217, 33%, 17%);
   --sidebar-ring: hsl(142, 71%, 45%);
-  --font-sans: 'Share Tech Mono', 'Inter', monospace;
+  --font-sans: 'Intel One Mono', 'Inter', monospace;
   --font-serif: 'Orbitron', Georgia, serif;
-  --font-mono: 'Share Tech Mono', 'Courier New', monospace;
+  --font-mono: 'Intel One Mono', 'Courier New', monospace;
   --radius: 0.75rem;
 }
 
@@ -123,7 +123,7 @@
 }
 
 .typing-cursor::after {
-  content: '▋';
+  content: '|';
   animation: blink 1s infinite;
 }
 

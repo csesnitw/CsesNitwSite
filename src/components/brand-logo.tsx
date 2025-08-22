@@ -9,32 +9,23 @@ type BrandLogoProps = React.SVGProps<SVGSVGElement> & {
 export default function BrandLogo({ size = 24, className, ...props }: BrandLogoProps) {
   return (
     <svg
+      xmlns="http://www.w3.org/2000/svg"
       width={size}
       height={size}
-      viewBox="0 0 24 24"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      role="img"
-      aria-label="CSES NITW Logo"
-      className={cn("text-green-500", className)}
       {...props}
     >
-      <rect x="2.5" y="2.5" width="19" height="19" rx="4" stroke="currentColor" strokeWidth="1.5" />
-
-      <rect x="6" y="7" width="2" height="10" rx="1" fill="currentColor" opacity="0.9" />
-      <rect x="10" y="5" width="2" height="14" rx="1" fill="currentColor" opacity="0.85" />
-      <rect x="14" y="9" width="2" height="8" rx="1" fill="currentColor" opacity="0.9" />
-      <rect x="18" y="6.5" width="2" height="11" rx="1" fill="currentColor" opacity="0.8" />
-
-      <defs>
-        <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
-          <feGaussianBlur stdDeviation="1.5" result="coloredBlur" />
-          <feMerge>
-            <feMergeNode in="coloredBlur" />
-            <feMergeNode in="SourceGraphic" />
-          </feMerge>
-        </filter>
-      </defs>
+      <path
+        d="M295 540h209v50c-25.776.752-51.499 1.143-77.282 1.101q-6.99-.007-13.981-.008-13.13-.005-26.26-.021a47227 47227 0 0 0-29.988-.022q-30.745-.016-61.489-.05v50h129v50H295l1 101 208 1v50H295v-50h-52V590h52z"
+        fill="#FFF"
+      />
+      <path
+        d="M654 540h183v51H655v50h130v50h52v102h-52v50H602v-51h182V692H654v-50h-52v-52h52z"
+        fill="#00B5C6"
+      />
+      <path
+        d="M654 266h131v50h52v102h-52v50H602v-51h182V317H654zm-411-52h52l1 201 208 1v50H295v-50h-52zm411-49h183v51H654v50h-52v-51h52zm-359-2h209v50H295z"
+        fill="#FFF"
+      />
     </svg>
   );
 }

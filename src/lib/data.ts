@@ -67,24 +67,17 @@ const teamMembersData: TeamMember[] = [
 ];
 
 const sampleLogLines = [
-  "$ git push origin main",
-  "Enumerating objects: 42, done.",
-  "Counting objects: 100% (42/42), done.",
-  "Delta compression using up to 8 threads",
-  "Compressing objects: 100% (28/28), done.",
-  "Writing objects: 100% (28/28), 3.45 KiB | 3.45 MiB/s, done.",
-  "Total 28 (delta 18), reused 0 (delta 0), pack-reused 0",
-  "To https://github.com/cses-nitw/website.git",
-  "   f4a2b8c..8e7d9a1  main -> main",
-  "",
-  "$ npm run build",
-  "> Building for production...",
-  "✓ Build completed successfully in 2.34s",
-  "",
+  "  @@@@@@@@@@      @@@@@@@@@        @@@@@@@@@@       @@@@@@@@@", 
+"@@              @@               @@               @@            ",
+"@@                @@@@@@@@@        @@@@@@           @@@@@@@@@   ",
+"@@                         @@    @@                          @@ ",
+"@@                         @@    @@                          @@ ",
+"  @@@@@@@@@@     @@@@@@@@@@        @@@@@@@@@@      @@@@@@@@@@",
   "[INFO] New event registered: AI/ML Workshop",
   "[INFO] 15 new members joined today",
   "[SUCCESS] Hackathon submissions deployed",
   "[INFO] Newsletter sent to 847 subscribers",
+  ">"
 ];
 
 const terminalLogsData: TerminalLog[] = sampleLogLines.map((content) => {

@@ -1,11 +1,21 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
-import BrandLogo from "@/components/brand-logo";
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
+  const [typed, setTyped] = useState("");
+
+  useEffect(() => {
+    const text = "cses";
+    let i = 0;
+    const timer = setInterval(() => {
+      setTyped((t) => (i < text.length ? t + text[i++] : t));
+      if (i >= text.length) clearInterval(timer);
+    }, 150);
+    return () => clearInterval(timer);
+  }, []);
 
   const navItems = [
     { href: "/", label: "Home", type: "route" as const },
@@ -21,27 +31,37 @@ export default function Navigation() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           <div className="flex items-center space-x-2" data-testid="logo">
-            <BrandLogo size={24} className="matrix-glow" />
-            <h1 className="text-xl font-bold">CSES NITW</h1>
+            <span className="font-mono text-green-400 lowercase text-lg md:text-xl">
+              {typed}
+              <span className="typing-cursor" aria-hidden="true"></span>
+            </span>
           </div>
-          
+
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            {navItems.map((item) => (
-              item.type === 'route' ? (
+            {navItems.map((item) =>
+              item.type === "route" ? (
                 <Link key={item.href} href={item.href}>
-                  <a className="hover:text-green-400 transition-colors" data-testid={`nav-${item.label.toLowerCase()}`}>
+                  <a
+                    className="font-mono text-green-400 hover:text-white-400 transition-colors"
+                    data-testid={`nav-${item.label.toLowerCase()}`}
+                  >
                     {item.label}
                   </a>
                 </Link>
               ) : (
-                <a key={item.href} href={item.href} className="hover:text-green-400 transition-colors" data-testid={`nav-${item.label.toLowerCase()}`}>
+                <a
+                  key={item.href}
+                  href={item.href}
+                  className="font-mono text-green-400 hover:text-green-400 transition-colors"
+                  data-testid={`nav-${item.label.toLowerCase()}`}
+                >
                   {item.label}
                 </a>
               )
-            ))}
+            )}
           </div>
-          
+
           {/* Mobile Menu Button */}
           <Button
             variant="ghost"
@@ -53,13 +73,13 @@ export default function Navigation() {
             {isOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
           </Button>
         </div>
-        
+
         {/* Mobile Navigation */}
         {isOpen && (
           <div className="md:hidden border-t border-border">
             <div className="px-2 pt-2 pb-3 space-y-1">
-              {navItems.map((item) => (
-                item.type === 'route' ? (
+              {navItems.map((item) =>
+                item.type === "route" ? (
                   <Link key={item.href} href={item.href}>
                     <a
                       className="block w-full text-left px-3 py-2 hover:text-green-400 transition-colors"
@@ -80,7 +100,7 @@ export default function Navigation() {
                     {item.label}
                   </a>
                 )
-              ))}
+              )}
             </div>
           </div>
         )}

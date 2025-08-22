@@ -38,17 +38,23 @@ export default function LiveTerminal() {
           <span className="ml-4 text-slate-400">CSES Terminal - Live Activity Feed</span>
         </div>
         
-        <div className="text-sm space-y-1 max-h-64 overflow-y-auto" data-testid="terminal-content">
-          {displayedLogs.map((log, index) => (
-            <div 
-              key={log.id}
-              className={`terminal-line ${getLineColor(log.type, log.content)}`}
-              style={{ animationDelay: `${index * 0.1}s` }}
-            >
-              {log.content}
-            </div>
-          ))}
-          <div className="typing-cursor text-green-400"></div>
+        <div className="text-sm space-y-1 max-h-64 overflow-y-auto overflow-x-auto" data-testid="terminal-content">
+          {displayedLogs.map((log, index) => {
+            const isLast = index === displayedLogs.length - 1;
+            const color = getLineColor(log.type, log.content);
+            return (
+              <div
+                key={log.id}
+                className={`terminal-line whitespace-pre ${color}`}
+                style={{ animationDelay: `${index * 0.1}s` }}
+              >
+                <span>{log.content}</span>
+                {isLast && (
+                  <span className="typing-cursor text-current" aria-hidden="true"></span>
+                )}
+              </div>
+            );
+          })}
         </div>
       </div>
     </div>
