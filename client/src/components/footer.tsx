@@ -1,4 +1,4 @@
-import { Code } from "lucide-react";
+import BrandLogo from "@/components/brand-logo";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 export default function Footer() {
@@ -28,7 +28,7 @@ export default function Footer() {
         <div className="grid md:grid-cols-2 gap-8">
           <div>
             <div className="flex items-center space-x-2 mb-4" data-testid="footer-logo">
-              <Code className="text-green-500 text-2xl matrix-glow" />
+              <BrandLogo size={24} className="matrix-glow" />
               <h3 className="text-xl font-bold matrix-text">CSES NITW</h3>
             </div>
             <p className="text-slate-400 mb-4 max-w-md matrix-text" data-testid="footer-description">

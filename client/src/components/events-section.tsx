@@ -3,10 +3,12 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Calendar } from "lucide-react";
 import type { Event } from "@shared/schema";
+import { getEvents } from "@/lib/data";
 
 export default function EventsSection() {
   const { data: events = [], isLoading } = useQuery<Event[]>({
-    queryKey: ["/api/events"],
+    queryKey: ["events"],
+    queryFn: () => getEvents(),
   });
 
   const stats = [

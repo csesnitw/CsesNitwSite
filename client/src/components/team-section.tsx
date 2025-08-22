@@ -2,10 +2,12 @@ import { useQuery } from "@tanstack/react-query";
 import { Card, CardContent } from "@/components/ui/card";
 import { Linkedin, Github, Twitter, Users } from "lucide-react";
 import type { TeamMember } from "@shared/schema";
+import { getTeamMembers } from "@/lib/data";
 
 export default function TeamSection() {
   const { data: teamMembers = [], isLoading } = useQuery<TeamMember[]>({
-    queryKey: ["/api/team"],
+    queryKey: ["team"],
+    queryFn: () => getTeamMembers(),
   });
 
   if (isLoading) {
