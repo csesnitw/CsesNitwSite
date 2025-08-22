@@ -1,0 +1,68 @@
+[
+  {
+    "id": "gs-1",
+    "name": "Dheer Pandey",
+    "position": "General Secretary",
+    "year": "Final Year, CSE",
+    "imageUrl": "",
+    "linkedinUrl": null,
+    "githubUrl": null,
+    "twitterUrl": null,
+    "displayOrder": 1
+  },
+  {
+    "id": "gs-2",
+    "name": "Rashwin Musuku",
+    "position": "General Secretary",
+    "year": "Final Year, CSE",
+    "imageUrl": "",
+    "linkedinUrl": null,
+    "githubUrl": null,
+    "twitterUrl": null,
+    "displayOrder": 2
+  },
+  {
+    "id": "tm-1",
+    "name": "Nisarg Desai",
+    "position": "Dev Team Lead",
+    "year": "3rd Year, CSE",
+    "imageUrl": "",
+    "linkedinUrl": null,
+    "githubUrl": null,
+    "twitterUrl": null,
+    "displayOrder": 3
+  },
+  {
+    "id": "tm-2",
+    "name": "Neel Mandal",
+    "position": "Dev Team Lead",
+    "year": "3rd Year, CSE",
+    "imageUrl": "",
+    "linkedinUrl": null,
+    "githubUrl": null,
+    "twitterUrl": null,
+    "displayOrder": 4
+  },
+  {
+    "id": "tm-3",
+    "name": "Shashank Dixit",
+    "position": "PR Team Lead",
+    "year": "3rd Year, CSE",
+    "imageUrl": "",
+    "linkedinUrl": null,
+    "githubUrl": null,
+    "twitterUrl": null,
+    "displayOrder": 5
+  },
+  {
+    "id": "tm-4",
+    "name": "Krrish Chanchal",
+    "position": "Contest Team Lead",
+    "year": "2nd Year, CSE",
+    "imageUrl": "",
+    "linkedinUrl": null,
+    "githubUrl": null,
+    "twitterUrl": null,
+    "displayOrder": 6
+  }
+]

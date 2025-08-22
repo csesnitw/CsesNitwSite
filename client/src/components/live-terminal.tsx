@@ -1,13 +1,15 @@
 import { useEffect, useState } from "react";
 import { useQuery } from "@tanstack/react-query";
 import type { TerminalLog } from "@shared/schema";
+import { getTerminalLogs } from "@/lib/data";
 
 export default function LiveTerminal() {
   const [displayedLogs, setDisplayedLogs] = useState<TerminalLog[]>([]);
 
   const { data: logs = [] } = useQuery<TerminalLog[]>({
-    queryKey: ["/api/terminal-logs"],
-    refetchInterval: 3000, // Refetch every 3 seconds for live updates
+    queryKey: ["terminal-logs"],
+    queryFn: () => getTerminalLogs(15),
+    refetchInterval: 3000, // Simulate live updates
   });
 
   useEffect(() => {
