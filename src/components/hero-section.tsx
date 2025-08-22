@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import LiveTerminal from "./live-terminal";
+import heroLogoUrl from "@/cses_black.svg";
 
 export default function HeroSection() {
   const scrollToSection = (sectionId: string) => {
@@ -15,7 +16,7 @@ export default function HeroSection() {
         <div className="mb-8">
           <div className="flex justify-center mb-6">
             <img
-              src="/src/cses_black.svg"
+              src={heroLogoUrl}
               alt="CSES NITW logo"
               className="scale-50"
               data-testid="hero-logo"

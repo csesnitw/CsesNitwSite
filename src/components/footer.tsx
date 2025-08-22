@@ -1,4 +1,5 @@
 import { FaLinkedin, FaGithub } from "react-icons/fa";
+import footerLogoUrl from "@/cses_black.svg";
 
 export default function Footer() {
   const scrollToSection = (sectionId: string) => {
@@ -28,7 +29,7 @@ export default function Footer() {
           <div>
             <div className="flex items-center space-x-2 mb-4" data-testid="footer-logo">
               <img
-                src="/src/cses_black.svg"
+                src={footerLogoUrl}
                 alt="CSES NITW logo"
                 className="h-10"
                 data-testid="hero-logo"
