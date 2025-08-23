@@ -44,7 +44,7 @@ export default function AboutSection() {
                 <Users className="text-green-300 text-2xl mb-4 " />
                 <h3 className="text-xl font-semibold mb-3 " data-testid="community-title">Our Community</h3>
                 <p className="text-slate-300" data-testid="community-description">
-                  Join <span className="text-green-500 font-semibold">500+</span> passionate students and alumni 
+                  Join <span className="text-green-500 font-semibold">40+</span> passionate students 
                   who are shaping the future of technology through collaboration and innovation.
                 </p>
               </CardContent>

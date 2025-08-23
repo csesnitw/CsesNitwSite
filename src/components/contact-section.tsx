@@ -38,7 +38,7 @@ export default function ContactSection() {
                 <h4 className="font-semibold mb-2" data-testid="email-title">Email</h4>
                 <p className="text-slate-400">
                   <a 
-                    href="mailto:cses@nitw.ac.in" 
+                    href="mailto:csea@nitw.ac.in" 
                     className="hover:text-green-400 transition-colors"
                     data-testid="email-link"
                   >

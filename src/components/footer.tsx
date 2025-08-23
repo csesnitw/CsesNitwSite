@@ -82,7 +82,7 @@ export default function Footer() {
           <p data-testid="footer-copyright" className="">
             &copy; 2025 Computer Science and Engineering Society, NIT Warangal.
             <br />
-            Made with <span className="text-red-500">❤</span> by the CSES NITW team.
+            Made with <span className="text-red-500">❤</span> by the CSES DEV team.
           </p>
         </div>
       </div>
