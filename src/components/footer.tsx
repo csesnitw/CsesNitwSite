@@ -1,18 +1,12 @@
-import BrandLogo from "@/components/brand-logo";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { Link } from "wouter";
+import footerLogoUrl from "@/cses_black.svg";
 
 export default function Footer() {
-  const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
   const quickLinks = [
-    { href: "about", label: "About Us" },
-    { href: "team", label: "Team" },
-    { href: "contact", label: "Contact" },
+    { href: "/#about", label: "About Us" },
+    { href: "/team", label: "Team" },
+    { href: "/#contact", label: "Contact" },
   ];
 
 
@@ -28,10 +22,14 @@ export default function Footer() {
         <div className="grid md:grid-cols-2 gap-8">
           <div>
             <div className="flex items-center space-x-2 mb-4" data-testid="footer-logo">
-              <BrandLogo size={24} className="matrix-glow" />
-              <h3 className="text-xl font-bold matrix-text">CSES NITW</h3>
+              <img
+                src={footerLogoUrl}
+                alt="CSES NITW logo"
+                className="h-10"
+                data-testid="hero-logo"
+              />
             </div>
-            <p className="text-slate-400 mb-4 max-w-md matrix-text" data-testid="footer-description">
+            <p className="text-slate-400 mb-4 max-w-md" data-testid="footer-description">
               Empowering computer science students at NIT Warangal through innovation, 
               collaboration, and technical excellence.
             </p>
@@ -52,17 +50,28 @@ export default function Footer() {
           </div>
           
           <div>
-            <h4 className="font-semibold mb-4 matrix-text" data-testid="quick-links-title">Quick Links</h4>
+            <h4 className="font-semibold mb-4" data-testid="quick-links-title">Quick Links</h4>
             <ul className="space-y-2 text-slate-400">
               {quickLinks.map((link) => (
                 <li key={link.href}>
-                  <button
-                    onClick={() => scrollToSection(link.href)}
-                    className="hover:text-green-400 transition-colors matrix-text"
-                    data-testid={`footer-link-${link.label.toLowerCase().replace(' ', '-')}`}
-                  >
-                    {link.label}
-                  </button>
+                  {link.href.startsWith('/#') ? (
+                    <a
+                      href={link.href}
+                      className="hover:text-green-400 transition-colors"
+                      data-testid={`footer-link-${link.label.toLowerCase().replace(' ', '-')}`}
+                    >
+                      {link.label}
+                    </a>
+                  ) : (
+                    <Link href={link.href}>
+                      <a
+                        className="hover:text-green-400 transition-colors"
+                        data-testid={`footer-link-${link.label.toLowerCase().replace(' ', '-')}`}
+                      >
+                        {link.label}
+                      </a>
+                    </Link>
+                  )}
                 </li>
               ))}
             </ul>
@@ -71,7 +80,9 @@ export default function Footer() {
         
         <div className="border-t border-border mt-8 pt-8 text-center text-slate-400">
           <p data-testid="footer-copyright" className="">
-            &copy; 2025 Computer Science and Engineering Society, NIT Warangal. All rights reserved.
+            &copy; 2025 Computer Science and Engineering Society, NIT Warangal.
+            <br />
+            Made with <span className="text-red-500">❤</span> by the CSES NITW team.
           </p>
         </div>
       </div>

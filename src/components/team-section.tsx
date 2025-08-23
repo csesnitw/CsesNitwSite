@@ -21,20 +21,20 @@ export default function TeamSection() {
   }
 
   const getPositionColor = (position: string) => {
-    if (position.includes('President') || position.includes('General Secretary')) return 'text-green-500 matrix-glow holographic-text';
-    if (position.includes('Vice')) return 'text-green-400 matrix-glow';
-    if (position.includes('Technical')) return 'text-green-300 matrix-glow';
-    if (position.includes('Events')) return 'text-green-400 matrix-glow';
-    if (position.includes('Design')) return 'text-green-300 matrix-glow';
-    if (position.includes('Outreach')) return 'text-green-400 matrix-glow';
-    return 'text-green-500 matrix-glow';
+    if (position.includes('President') || position.includes('General Secretary')) return 'text-green-500  holographic-text';
+    if (position.includes('Vice')) return 'text-green-400 ';
+    if (position.includes('Technical')) return 'text-green-300 ';
+    if (position.includes('Events')) return 'text-green-400 ';
+    if (position.includes('Design')) return 'text-green-300 ';
+    if (position.includes('Outreach')) return 'text-green-400 ';
+    return 'text-green-500 ';
   };
 
   return (
     <section id="team" className="py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold mb-4 matrix-glow" data-testid="team-title">Our Team</h2>
+          <h2 className="text-4xl font-bold mb-4 " data-testid="team-title">Our Team</h2>
           <p className="text-xl text-slate-400" data-testid="team-subtitle">
             Meet the passionate individuals driving CSES NITW forward.
           </p>
@@ -50,7 +50,7 @@ export default function TeamSection() {
                     <Users className="text-green-400 text-3xl" />
                   </div>
                 </div>
-                <h4 className="text-xl font-semibold mb-2 matrix-glow" data-testid={`member-name-${member.id}`}>
+                <h4 className="text-xl font-semibold mb-2 " data-testid={`member-name-${member.id}`}>
                   {member.name}
                 </h4>
                 <p className={`mb-2 ${getPositionColor(member.position)}`} data-testid={`member-position-${member.id}`}>

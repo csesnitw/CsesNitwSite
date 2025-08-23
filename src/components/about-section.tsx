@@ -6,7 +6,7 @@ export default function AboutSection() {
     <section id="about" className="py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold mb-4 matrix-glow" data-testid="about-title">About CSES NITW</h2>
+          <h2 className="text-4xl font-bold mb-4" data-testid="about-title">About CSES NITW</h2>
           <p className="text-xl text-slate-400 max-w-3xl mx-auto" data-testid="about-subtitle">
             Empowering the next generation of computer science professionals through community, learning, and innovation.
           </p>
@@ -17,8 +17,8 @@ export default function AboutSection() {
             <Card className="cyberpunk-glow-card hover-lift relative">
               <div className="absolute inset-0 cyberpunk-scan-lines"></div>
               <CardContent className="p-6 relative z-10">
-                <Target className="text-green-500 text-2xl mb-4 matrix-glow" />
-                <h3 className="text-xl font-semibold mb-3 matrix-glow" data-testid="mission-title">Our Mission</h3>
+                <Target className="text-green-500 text-2xl mb-4 " />
+                <h3 className="text-xl font-semibold mb-3 " data-testid="mission-title">Our Mission</h3>
                 <p className="text-slate-300" data-testid="mission-description">
                   To create a vibrant community of computer science enthusiasts, fostering technical excellence, 
                   innovation, and collaborative learning at NIT Warangal.
@@ -29,8 +29,8 @@ export default function AboutSection() {
             <Card className="cyberpunk-glow-card hover-lift relative">
               <div className="absolute inset-0 cyberpunk-scan-lines"></div>
               <CardContent className="p-6 relative z-10">
-                <Eye className="text-green-400 text-2xl mb-4 matrix-glow" />
-                <h3 className="text-xl font-semibold mb-3 matrix-glow" data-testid="vision-title">Our Vision</h3>
+                <Eye className="text-green-400 text-2xl mb-4 " />
+                <h3 className="text-xl font-semibold mb-3 " data-testid="vision-title">Our Vision</h3>
                 <p className="text-slate-300" data-testid="vision-description">
                   To be the leading platform for computer science students to explore cutting-edge technologies, 
                   build meaningful connections, and develop industry-ready skills.
@@ -41,10 +41,10 @@ export default function AboutSection() {
             <Card className="cyberpunk-glow-card hover-lift relative">
               <div className="absolute inset-0 cyberpunk-scan-lines"></div>
               <CardContent className="p-6 relative z-10">
-                <Users className="text-green-300 text-2xl mb-4 matrix-glow" />
-                <h3 className="text-xl font-semibold mb-3 matrix-glow" data-testid="community-title">Our Community</h3>
+                <Users className="text-green-300 text-2xl mb-4 " />
+                <h3 className="text-xl font-semibold mb-3 " data-testid="community-title">Our Community</h3>
                 <p className="text-slate-300" data-testid="community-description">
-                  Join <span className="text-green-500 font-semibold matrix-glow holographic-text">500+</span> passionate students and alumni 
+                  Join <span className="text-green-500 font-semibold">500+</span> passionate students and alumni 
                   who are shaping the future of technology through collaboration and innovation.
                 </p>
               </CardContent>
