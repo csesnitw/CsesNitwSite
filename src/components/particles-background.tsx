@@ -60,7 +60,7 @@ export default function ParticlesBackground() {
           }
         },
         interactivity: {
-          detect_on: 'canvas',
+          detect_on: 'window',
           events: {
             onhover: {
               enable: true,
@@ -91,7 +91,7 @@ export default function ParticlesBackground() {
               duration: 0.4
             },
             push: {
-              particles_nb: 10
+              particles_nb: 4
             },
             remove: {
               particles_nb: 2
