@@ -1,8 +1,27 @@
 import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
-import { Link } from "wouter";
+import { Link, useLocation } from "wouter";
 import footerLogoUrl from "@/cses_black.svg";
 
 export default function Footer() {
+  const [, navigate] = useLocation();
+
+  const handleAnchorClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    e.preventDefault();
+    const targetId = href.substring(2); // remove '/#'
+    
+    // Navigate to home page if not already there
+    if (window.location.pathname !== "/") {
+      navigate("/");
+      // Wait for the home page to render, then scroll
+      setTimeout(() => {
+        document.getElementById(targetId)?.scrollIntoView({ behavior: "smooth" });
+      }, 100); // Adjust delay if needed
+    } else {
+      // Already on the home page, just scroll
+      document.getElementById(targetId)?.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   const quickLinks = [
     { href: "/#about", label: "About Us" },
     { href: "/team", label: "Team" },
@@ -58,6 +77,7 @@ export default function Footer() {
                       href={link.href}
                       className="hover:text-green-400 transition-colors"
                       data-testid={`footer-link-${link.label.toLowerCase().replace(' ', '-')}`}
+                      onClick={(e) => handleAnchorClick(e, link.href)}
                     >
                       {link.label}
                     </a>

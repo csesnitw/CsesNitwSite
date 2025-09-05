@@ -1,11 +1,12 @@
 import { useEffect, useState } from "react";
-import { Link } from "wouter";
+import { Link, useLocation } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
   const [typed, setTyped] = useState("");
+  const [, navigate] = useLocation();
 
   useEffect(() => {
     const text = "cses";
@@ -16,6 +17,24 @@ export default function Navigation() {
     }, 150);
     return () => clearInterval(timer);
   }, []);
+
+  const handleAnchorClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    e.preventDefault();
+    const targetId = href.substring(2); // remove '/#'
+    
+    // Navigate to home page if not already there
+    if (window.location.pathname !== "/") {
+      navigate("/");
+      // Wait for the home page to render, then scroll
+      setTimeout(() => {
+        document.getElementById(targetId)?.scrollIntoView({ behavior: "smooth" });
+      }, 100); // Adjust delay if needed
+    } else {
+      // Already on the home page, just scroll
+      document.getElementById(targetId)?.scrollIntoView({ behavior: "smooth" });
+    }
+    setIsOpen(false);
+  };
 
   const navItems = [
     { href: "/", label: "Home", type: "route" as const },
@@ -53,6 +72,7 @@ export default function Navigation() {
                   href={item.href}
                   className="font-mono text-green-400 hover:text-green-400 transition-colors"
                   data-testid={`nav-${item.label.toLowerCase()}`}
+                  onClick={(e) => handleAnchorClick(e, item.href)}
                 >
                   {item.label}
                 </a>
@@ -93,7 +113,7 @@ export default function Navigation() {
                     href={item.href}
                     className="block w-full text-left px-3 py-2 hover:text-green-400 transition-colors"
                     data-testid={`mobile-nav-${item.label.toLowerCase()}`}
-                    onClick={() => setIsOpen(false)}
+                    onClick={(e) => handleAnchorClick(e, item.href)}
                   >
                     {item.label}
                   </a>
