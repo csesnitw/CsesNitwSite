@@ -1,4 +1,4 @@
-import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
 import { Link } from "wouter";
 import footerLogoUrl from "@/cses_black.svg";
 
@@ -9,11 +9,10 @@ export default function Footer() {
     { href: "/#contact", label: "Contact" },
   ];
 
-
-
   const socialLinks = [
     { icon: FaLinkedin, href: "https://www.linkedin.com/company/cses-nitw", testId: "footer-linkedin" },
     { icon: FaGithub, href: "https://github.com/csesnitw", testId: "footer-github" },
+    { icon: FaInstagram, href: "https://www.instagram.com/cses_nitw/", testId: "footer-instagram" },
   ];
 
   return (

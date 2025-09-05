@@ -1,11 +1,12 @@
 import { MapPin, Mail, Users } from "lucide-react";
-import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
 
 export default function ContactSection() {
 
   const socialLinks = [
     { icon: FaLinkedin, href: "https://www.linkedin.com/company/cses-nitw", color: "hover:text-green-400" },
     { icon: FaGithub, href: "https://github.com/csesnitw", color: "hover:text-green-400" },
+    { icon: FaInstagram, href: "https://www.instagram.com/cses_nitw/", color: "hover:text-green-400" },
   ];
 
   return (
