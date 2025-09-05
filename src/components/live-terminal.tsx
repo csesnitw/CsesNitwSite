@@ -27,7 +27,7 @@ export default function LiveTerminal() {
   };
 
   return (
-    <div className="max-w-4xl mx-auto mt-12">
+    <div className="w-full mt-12">
       <div className="terminal rounded-lg p-6 text-left">
         <div className="flex items-center mb-4">
           <div className="flex space-x-2">
@@ -37,7 +37,7 @@ export default function LiveTerminal() {
           </div>
           <span className="ml-4 text-slate-400">CSES Terminal - Live Activity Feed</span>
         </div>
-        
+
         <div className="text-sm space-y-1 max-h-64 overflow-y-auto overflow-x-auto" data-testid="terminal-content">
           {displayedLogs.map((log, index) => {
             const isLast = index === displayedLogs.length - 1;

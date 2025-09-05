@@ -12,13 +12,13 @@ export default function HeroSection() {
 
   return (
     <section id="home" className="min-h-screen flex items-center justify-center pt-20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center w-full">
         <div className="mb-8">
           <div className="flex justify-center mb-6">
             <img
               src={heroLogoUrl}
               alt="CSES NITW logo"
-              className="scale-50"
+              className="h-auto w-full max-w-xs md:max-w-md"
               data-testid="hero-logo"
             />
           </div>

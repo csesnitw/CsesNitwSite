@@ -24,8 +24,6 @@ export default function Navigation() {
     { href: "/#contact", label: "Contact", type: "anchor" as const },
   ];
 
-  // For hash links we rely on default anchor behavior to scroll
-
   return (
     <nav className="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-md border-b border-border">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
