@@ -30,7 +30,7 @@
     "linkedinUrl": null,
     "githubUrl": null,
     "twitterUrl": null,
-    "displayOrder": 7
+    "displayOrder": 3
   },
   {
     "id": "tm-6",
@@ -41,7 +41,7 @@
     "linkedinUrl": null,
     "githubUrl": null,
     "twitterUrl": null,
-    "displayOrder": 8
+    "displayOrder": 4
   },
   {
     "id": "tm-7",
@@ -52,7 +52,7 @@
     "linkedinUrl": null,
     "githubUrl": null,
     "twitterUrl": null,
-    "displayOrder": 9
+    "displayOrder": 5
   },
   {
     "id": "tm-8",
@@ -63,7 +63,7 @@
     "linkedinUrl": null,
     "githubUrl": null,
     "twitterUrl": null,
-    "displayOrder": 10
+    "displayOrder": 6
   },
   {
     "id": "tm-9",
@@ -74,7 +74,7 @@
     "linkedinUrl": null,
     "githubUrl": null,
     "twitterUrl": null,
-    "displayOrder": 11
+    "displayOrder": 7
   },
   {
     "id": "tm-10",
@@ -85,7 +85,7 @@
     "linkedinUrl": null,
     "githubUrl": null,
     "twitterUrl": null,
-    "displayOrder": 12
+    "displayOrder": 8
   },
   {
     "id": "tm-11",
@@ -96,7 +96,7 @@
     "linkedinUrl": null,
     "githubUrl": null,
     "twitterUrl": null,
-    "displayOrder": 13
+    "displayOrder": 9
   },
   {
     "id": "tm-12",
@@ -107,7 +107,7 @@
     "linkedinUrl": null,
     "githubUrl": null,
     "twitterUrl": null,
-    "displayOrder": 14
+    "displayOrder": 10
   },
   {
     "id": "tm-13",
@@ -118,7 +118,7 @@
     "linkedinUrl": null,
     "githubUrl": null,
     "twitterUrl": null,
-    "displayOrder": 15
+    "displayOrder": 11
   },
   {
     "id": "tm-14",
@@ -129,7 +129,7 @@
     "linkedinUrl": null,
     "githubUrl": null,
     "twitterUrl": null,
-    "displayOrder": 16
+    "displayOrder": 12
   },
   {
     "id": "tm-15",
@@ -140,7 +140,7 @@
     "linkedinUrl": null,
     "githubUrl": null,
     "twitterUrl": null,
-    "displayOrder": 17
+    "displayOrder": 13
   },
   {
     "id": "tm-16",
@@ -151,7 +151,7 @@
     "linkedinUrl": null,
     "githubUrl": null,
     "twitterUrl": null,
-    "displayOrder": 18
+    "displayOrder": 14
   },
   {
     "id": "tm-17",
@@ -162,7 +162,7 @@
     "linkedinUrl": null,
     "githubUrl": null,
     "twitterUrl": null,
-    "displayOrder": 19
+    "displayOrder": 15
   },
   {
     "id": "tm-18",
@@ -173,7 +173,7 @@
     "linkedinUrl": null,
     "githubUrl": null,
     "twitterUrl": null,
-    "displayOrder": 20
+    "displayOrder": 16
   },
   {
     "id": "tm-19",
@@ -184,7 +184,7 @@
     "linkedinUrl": null,
     "githubUrl": null,
     "twitterUrl": null,
-    "displayOrder": 21
+    "displayOrder": 17
   },
   {
     "id": "tm-1",
@@ -195,7 +195,7 @@
     "linkedinUrl": null,
     "githubUrl": null,
     "twitterUrl": null,
-    "displayOrder": 3
+    "displayOrder": 18
   },
   {
     "id": "tm-2",
@@ -206,7 +206,7 @@
     "linkedinUrl": null,
     "githubUrl": null,
     "twitterUrl": null,
-    "displayOrder": 4
+    "displayOrder": 19
   },
   {
     "id": "tm-3",
@@ -217,7 +217,18 @@
     "linkedinUrl": null,
     "githubUrl": null,
     "twitterUrl": null,
-    "displayOrder": 5
+    "displayOrder": 20
+  },
+  {
+    "id": "tm-4",
+    "name": "Krrish Chanchal",
+    "position": "Contest Team Lead",
+    "year": "3rd Year, CSE",
+    "imageUrl": "",
+    "linkedinUrl": null,
+    "githubUrl": null,
+    "twitterUrl": null,
+    "displayOrder": 21
   },
   {
     "id": "tm-20",
@@ -264,17 +275,6 @@
     "displayOrder": 25
   },
   {
-    "id": "tm-24",
-    "name": "Pranay Devireddy",
-    "position": "Member",
-    "year": "3rd Year, CSE",
-    "imageUrl": "",
-    "linkedinUrl": null,
-    "githubUrl": null,
-    "twitterUrl": null,
-    "displayOrder": 26
-  },
-  {
     "id": "tm-25",
     "name": "Nahad Bin Noushad",
     "position": "ECC Team Lead",
@@ -283,7 +283,7 @@
     "linkedinUrl": null,
     "githubUrl": null,
     "twitterUrl": null,
-    "displayOrder": 27
+    "displayOrder": 26
   },
   {
     "id": "tm-26",
@@ -294,29 +294,7 @@
     "linkedinUrl": null,
     "githubUrl": null,
     "twitterUrl": null,
-    "displayOrder": 28
-  },
-  {
-    "id": "tm-27",
-    "name": "Ruthvika Gampa",
-    "position": "Member",
-    "year": "3rd Year, CSE",
-    "imageUrl": "",
-    "linkedinUrl": null,
-    "githubUrl": null,
-    "twitterUrl": null,
-    "displayOrder": 29
-  },
-  {
-    "id": "tm-28",
-    "name": "Biswojit Behera",
-    "position": "Member",
-    "year": "3rd Year, CSE",
-    "imageUrl": "",
-    "linkedinUrl": null,
-    "githubUrl": null,
-    "twitterUrl": null,
-    "displayOrder": 30
+    "displayOrder": 27
   },
   {
     "id": "tm-29",
@@ -327,7 +305,7 @@
     "linkedinUrl": null,
     "githubUrl": null,
     "twitterUrl": null,
-    "displayOrder": 31
+    "displayOrder": 28
   },
   {
     "id": "tm-30",
@@ -338,7 +316,7 @@
     "linkedinUrl": null,
     "githubUrl": null,
     "twitterUrl": null,
-    "displayOrder": 32
+    "displayOrder": 29
   },
   {
     "id": "tm-31",
@@ -349,7 +327,7 @@
     "linkedinUrl": null,
     "githubUrl": null,
     "twitterUrl": null,
-    "displayOrder": 33
+    "displayOrder": 30
   },
   {
     "id": "tm-32",
@@ -360,7 +338,62 @@
     "linkedinUrl": null,
     "githubUrl": null,
     "twitterUrl": null,
+    "displayOrder": 31
+  },
+  {
+    "id": "tm-57",
+    "name": "Aryaman Kar",
+    "position": "Design Team Lead",
+    "year": "3rd Year, CSE",
+    "imageUrl": "",
+    "linkedinUrl": null,
+    "githubUrl": null,
+    "twitterUrl": null,
+    "displayOrder": 32
+  },
+  {
+    "id": "tm-58",
+    "name": "Shwetang Wasnik",
+    "position": "Design Team Lead",
+    "year": "3rd Year, CSE",
+    "imageUrl": "",
+    "linkedinUrl": null,
+    "githubUrl": null,
+    "twitterUrl": null,
+    "displayOrder": 33
+  },
+  {
+    "id": "tm-24",
+    "name": "Pranay Devireddy",
+    "position": "Member",
+    "year": "3rd Year, CSE",
+    "imageUrl": "",
+    "linkedinUrl": null,
+    "githubUrl": null,
+    "twitterUrl": null,
     "displayOrder": 34
+  },
+  {
+    "id": "tm-27",
+    "name": "Ruthvika Gampa",
+    "position": "Member",
+    "year": "3rd Year, CSE",
+    "imageUrl": "",
+    "linkedinUrl": null,
+    "githubUrl": null,
+    "twitterUrl": null,
+    "displayOrder": 35
+  },
+  {
+    "id": "tm-28",
+    "name": "Biswojit Behera",
+    "position": "Member",
+    "year": "3rd Year, CSE",
+    "imageUrl": "",
+    "linkedinUrl": null,
+    "githubUrl": null,
+    "twitterUrl": null,
+    "displayOrder": 36
   },
   {
     "id": "tm-33",
@@ -371,7 +404,7 @@
     "linkedinUrl": null,
     "githubUrl": null,
     "twitterUrl": null,
-    "displayOrder": 35
+    "displayOrder": 37
   },
   {
     "id": "tm-34",
@@ -382,7 +415,7 @@
     "linkedinUrl": null,
     "githubUrl": null,
     "twitterUrl": null,
-    "displayOrder": 36
+    "displayOrder": 38
   },
   {
     "id": "tm-35",
@@ -393,18 +426,7 @@
     "linkedinUrl": null,
     "githubUrl": null,
     "twitterUrl": null,
-    "displayOrder": 37
-  },
-  {
-    "id": "tm-4",
-    "name": "Krrish Chanchal",
-    "position": "Contest Team Lead",
-    "year": "3rd Year, CSE",
-    "imageUrl": "",
-    "linkedinUrl": null,
-    "githubUrl": null,
-    "twitterUrl": null,
-    "displayOrder": 6
+    "displayOrder": 39
   },
   {
     "id": "tm-36",
@@ -415,18 +437,18 @@
     "linkedinUrl": null,
     "githubUrl": null,
     "twitterUrl": null,
-    "displayOrder": 38
+    "displayOrder": 40
   },
   {
     "id": "tm-37",
-    "name": "Jefferey",
+    "name": "Jeffrey Jeyaseelan",
     "position": "Executive Member",
     "year": "2nd Year, CSE",
     "imageUrl": "",
     "linkedinUrl": null,
     "githubUrl": null,
     "twitterUrl": null,
-    "displayOrder": 39
+    "displayOrder": 41
   },
   {
     "id": "tm-38",
@@ -437,7 +459,7 @@
     "linkedinUrl": null,
     "githubUrl": null,
     "twitterUrl": null,
-    "displayOrder": 40
+    "displayOrder": 42
   },
   {
     "id": "tm-39",
@@ -448,7 +470,7 @@
     "linkedinUrl": null,
     "githubUrl": null,
     "twitterUrl": null,
-    "displayOrder": 41
+    "displayOrder": 43
   },
   {
     "id": "tm-40",
@@ -459,7 +481,7 @@
     "linkedinUrl": null,
     "githubUrl": null,
     "twitterUrl": null,
-    "displayOrder": 42
+    "displayOrder": 44
   },
   {
     "id": "tm-41",
@@ -470,7 +492,7 @@
     "linkedinUrl": null,
     "githubUrl": null,
     "twitterUrl": null,
-    "displayOrder": 43
+    "displayOrder": 45
   },
   {
     "id": "tm-42",
@@ -481,7 +503,7 @@
     "linkedinUrl": null,
     "githubUrl": null,
     "twitterUrl": null,
-    "displayOrder": 44
+    "displayOrder": 46
   },
   {
     "id": "tm-43",
@@ -492,7 +514,7 @@
     "linkedinUrl": null,
     "githubUrl": null,
     "twitterUrl": null,
-    "displayOrder": 45
+    "displayOrder": 47
   },
   {
     "id": "tm-44",
@@ -503,7 +525,7 @@
     "linkedinUrl": null,
     "githubUrl": null,
     "twitterUrl": null,
-    "displayOrder": 46
+    "displayOrder": 48
   },
   {
     "id": "tm-45",
@@ -514,7 +536,7 @@
     "linkedinUrl": null,
     "githubUrl": null,
     "twitterUrl": null,
-    "displayOrder": 47
+    "displayOrder": 49
   },
   {
     "id": "tm-46",
@@ -525,7 +547,7 @@
     "linkedinUrl": null,
     "githubUrl": null,
     "twitterUrl": null,
-    "displayOrder": 48
+    "displayOrder": 50
   },
   {
     "id": "tm-47",
@@ -536,7 +558,7 @@
     "linkedinUrl": null,
     "githubUrl": null,
     "twitterUrl": null,
-    "displayOrder": 49
+    "displayOrder": 51
   },
   {
     "id": "tm-48",
@@ -547,7 +569,7 @@
     "linkedinUrl": null,
     "githubUrl": null,
     "twitterUrl": null,
-    "displayOrder": 50
+    "displayOrder": 52
   },
   {
     "id": "tm-49",
@@ -558,7 +580,7 @@
     "linkedinUrl": null,
     "githubUrl": null,
     "twitterUrl": null,
-    "displayOrder": 51
+    "displayOrder": 53
   },
   {
     "id": "tm-50",
@@ -569,7 +591,7 @@
     "linkedinUrl": null,
     "githubUrl": null,
     "twitterUrl": null,
-    "displayOrder": 52
+    "displayOrder": 54
   },
   {
     "id": "tm-51",
@@ -580,7 +602,7 @@
     "linkedinUrl": null,
     "githubUrl": null,
     "twitterUrl": null,
-    "displayOrder": 52
+    "displayOrder": 55
   },
   {
     "id": "tm-52",
@@ -591,7 +613,7 @@
     "linkedinUrl": null,
     "githubUrl": null,
     "twitterUrl": null,
-    "displayOrder": 53
+    "displayOrder": 56
   },
   {
     "id": "tm-53",
@@ -602,7 +624,7 @@
     "linkedinUrl": null,
     "githubUrl": null,
     "twitterUrl": null,
-    "displayOrder": 54
+    "displayOrder": 57
   },
   {
     "id": "tm-54",
@@ -613,7 +635,7 @@
     "linkedinUrl": null,
     "githubUrl": null,
     "twitterUrl": null,
-    "displayOrder": 55
+    "displayOrder": 58
   },
   {
     "id": "tm-55",
@@ -624,7 +646,7 @@
     "linkedinUrl": null,
     "githubUrl": null,
     "twitterUrl": null,
-    "displayOrder": 56
+    "displayOrder": 59
   },
   {
     "id": "tm-56",
@@ -635,6 +657,17 @@
     "linkedinUrl": null,
     "githubUrl": null,
     "twitterUrl": null,
-    "displayOrder": 53
+    "displayOrder": 60
+  },
+  {
+    "id": "tm-59",
+    "name": "Sarna",
+    "position": "Executive Member",
+    "year": "2nd Year, CSE",
+    "imageUrl": "",
+    "linkedinUrl": null,
+    "githubUrl": null,
+    "twitterUrl": null,
+    "displayOrder": 61
   }
 ]
