@@ -18,20 +18,27 @@ export default function Navigation() {
     return () => clearInterval(timer);
   }, []);
 
-  const handleAnchorClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+  const handleAnchorClick = (
+    e: React.MouseEvent<HTMLAnchorElement>,
+    href: string
+  ) => {
     e.preventDefault();
     const targetId = href.substring(2); // remove '/#'
-    
+
     // Navigate to home page if not already there
     if (window.location.pathname !== "/") {
       navigate("/");
       // Wait for the home page to render, then scroll
       setTimeout(() => {
-        document.getElementById(targetId)?.scrollIntoView({ behavior: "smooth" });
+        document
+          .getElementById(targetId)
+          ?.scrollIntoView({ behavior: "smooth" });
       }, 100); // Adjust delay if needed
     } else {
       // Already on the home page, just scroll
-      document.getElementById(targetId)?.scrollIntoView({ behavior: "smooth" });
+      document
+        .getElementById(targetId)
+        ?.scrollIntoView({ behavior: "smooth" });
     }
     setIsOpen(false);
   };
@@ -40,6 +47,8 @@ export default function Navigation() {
     { href: "/", label: "Home", type: "route" as const },
     { href: "/#about", label: "About", type: "anchor" as const },
     { href: "/team", label: "Team", type: "route" as const },
+    { href: "/#events-showcase", label: "Events", type: "anchor" as const },
+    { href: "/#projects-showcase", label: "Projects", type: "anchor" as const },
     { href: "/#contact", label: "Contact", type: "anchor" as const },
   ];
 

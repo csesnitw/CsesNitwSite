@@ -43,7 +43,7 @@ export default function ContactSection() {
                     className="hover:text-green-400 transition-colors"
                     data-testid="email-link"
                   >
-                    cses@nitw.ac.in
+                    csea@nitw.ac.in
                   </a>
                 </p>
               </div>
