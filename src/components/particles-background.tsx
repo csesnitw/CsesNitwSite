@@ -1,107 +1,28 @@
-import { useEffect } from "react";
-
-declare global {
-  interface Window {
-    particlesJS: any;
-  }
-}
-
 export default function ParticlesBackground() {
-  useEffect(() => {
-    if (window.particlesJS) {
-      window.particlesJS('particles-js', {
-        particles: {
-          number: {
-            value: 80,
-            density: {
-              enable: true,
-              value_area: 800
-            }
-          },
-          color: {
-            value: '#00ff41'
-          },
-          shape: {
-            type: 'circle',
-            stroke: {
-              width: 0,
-              color: '#000000'
-            }
-          },
-          opacity: {
-            value: 0.5,
-            random: false,
-            anim: {
-              enable: false
-            }
-          },
-          size: {
-            value: 3,
-            random: true,
-            anim: {
-              enable: false
-            }
-          },
-          line_linked: {
-            enable: true,
-            distance: 150,
-            color: '#00ff41',
-            opacity: 0.2,
-            width: 1
-          },
-          move: {
-            enable: true,
-            speed: 6,
-            direction: 'none',
-            random: false,
-            straight: false,
-            out_mode: 'out',
-            bounce: false
-          }
-        },
-        interactivity: {
-          detect_on: 'window',
-          events: {
-            onhover: {
-              enable: true,
-              mode: 'repulse'
-            },
-            onclick: {
-              enable: true,
-              mode: 'push'
-            },
-            resize: true
-          },
-          modes: {
-            grab: {
-              distance: 400,
-              line_linked: {
-                opacity: 1
-              }
-            },
-            bubble: {
-              distance: 400,
-              size: 40,
-              duration: 2,
-              opacity: 8,
-              speed: 3
-            },
-            repulse: {
-              distance: 200,
-              duration: 0.4
-            },
-            push: {
-              particles_nb: 4
-            },
-            remove: {
-              particles_nb: 2
-            }
-          }
-        },
-        retina_detect: true
-      });
-    }
-  }, []);
+  return (
+    <div className="fixed inset-0 z-[-1] overflow-hidden bg-[hsl(222,47%,11%)]">
+      {/* Grid pattern */}
+      <div
+        className="absolute inset-0 opacity-[0.11]"
+        style={{
+          backgroundImage:
+            "linear-gradient(rgba(0,255,65,0.3) 1px, transparent 1px), linear-gradient(90deg, rgba(0,255,65,0.3) 1px, transparent 1px)",
+          backgroundSize: "60px 60px",
+        }}
+      />
 
-  return <div id="particles-js" className="fixed inset-0 z-[-1]" />;
+      {/* Center ferrofluid orb */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[500px] animate-[ferroMorph_8s_ease-in-out_infinite]">
+        <div
+          className="w-full h-full animate-[ferroDrift_14s_ease-in-out_infinite]"
+          style={{
+            background:
+              "radial-gradient(ellipse at 40% 45%, rgba(0,255,65,0.22) 0%, rgba(0,200,50,0.10) 30%, rgba(0,255,65,0.04) 55%, transparent 80%)",
+            borderRadius: "30% 70% 60% 40% / 60% 30% 70% 40%",
+            filter: "blur(35px)",
+          }}
+        />
+      </div>
+    </div>
+  );
 }

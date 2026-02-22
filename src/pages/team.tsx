@@ -71,19 +71,19 @@ export default function TeamPage() {
           {/* General Secretaries row - centered and bigger */}
           {leaders.length > 0 && (
             <div className="mb-14">
-              <div className="grid place-items-center gap-8 sm:grid-cols-2">
+              <div className="grid place-items-center gap-6 sm:grid-cols-2">
                 {leaders.map((m) => (
                   <Card
                     key={m.id}
-                    className="w-full max-w-xl glass-card hover-lift text-center"
+                    className="w-full max-w-sm glass-card hover-lift text-center"
                   >
-                    <CardContent className="p-8">
-                      <div className="w-28 h-28 rounded-full mx-auto mb-4 bg-gradient-to-br from-green-900 to-black flex items-center justify-center">
-                        <Users className="text-green-400 text-3xl" />
+                    <CardContent className="p-5">
+                      <div className="w-20 h-20 rounded-full mx-auto mb-3 bg-gradient-to-br from-green-900 to-black flex items-center justify-center">
+                        <Users className="text-green-400 text-2xl" />
                       </div>
-                      <h2 className="text-2xl font-semibold ">{m.name}</h2>
-                      <p className="text-green-400  mt-1">{m.position}</p>
-                      <p className="text-sm text-slate-400 mt-1">{m.year}</p>
+                      <h2 className="text-lg font-semibold ">{m.name}</h2>
+                      <p className="text-green-400 text-sm mt-1">{m.position}</p>
+                      <p className="text-xs text-slate-400 mt-1">{m.year}</p>
                       <Social m={m} />
                     </CardContent>
                   </Card>
@@ -93,16 +93,16 @@ export default function TeamPage() {
           )}
 
           {/* Rest of the team in a responsive grid */}
-          <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="grid gap-5 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
             {rest.map((m) => (
               <Card key={m.id} className="glass-card hover-lift text-center">
-                <CardContent className="p-6">
-                  <div className="w-24 h-24 rounded-full mx-auto mb-4 bg-gradient-to-br from-green-900 to-black flex items-center justify-center">
-                    <Users className="text-green-400 text-3xl" />
+                <CardContent className="p-4">
+                  <div className="w-16 h-16 rounded-full mx-auto mb-3 bg-gradient-to-br from-green-900 to-black flex items-center justify-center">
+                    <Users className="text-green-400 text-xl" />
                   </div>
-                  <h3 className="text-xl font-semibold ">{m.name}</h3>
-                  <p className="text-green-300  mt-1">{m.position}</p>
-                  <p className="text-sm text-slate-400 mt-1">{m.year}</p>
+                  <h3 className="text-base font-semibold ">{m.name}</h3>
+                  <p className="text-green-300 text-sm mt-1">{m.position}</p>
+                  <p className="text-xs text-slate-400 mt-1">{m.year}</p>
                   <Social m={m} />
                 </CardContent>
               </Card>
