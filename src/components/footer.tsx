@@ -30,11 +30,12 @@ export default function Footer() {
   };
 
   const quickLinks = [
-    { href: "/#about", label: "About Us" },
+    { href: "/links", label: "About Us" },
     { href: "/team", label: "Team" },
     { href: "/#events-showcase", label: "Events" },
     { href: "/#projects-showcase", label: "Projects" },
     { href: "/#contact", label: "Contact" },
+    { href: "/links", label: "Links" },
   ];
 
   const socialLinks = [

@@ -45,7 +45,7 @@ export default function Navigation() {
 
   const navItems = [
     { href: "/", label: "Home", type: "route" as const },
-    { href: "/#about", label: "About", type: "anchor" as const },
+    { href: "/links", label: "About", type: "route" as const },
     { href: "/team", label: "Team", type: "route" as const },
     { href: "/#events-showcase", label: "Events", type: "anchor" as const },
     { href: "/#projects-showcase", label: "Projects", type: "anchor" as const },

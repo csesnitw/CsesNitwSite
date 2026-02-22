@@ -1,7 +1,6 @@
 import ParticlesBackground from "@/components/particles-background";
 import Navigation from "@/components/navigation";
 import HeroSection from "@/components/hero-section";
-import AboutSection from "@/components/about-section";
 import AdvisorSection from "@/components/advisor-section";
 import EventsShowcaseSection from "@/components/events-showcase-section";
 import ProjectsShowcaseSection from "@/components/projects-showcase-section";
@@ -15,7 +14,6 @@ export default function Home() {
       <Navigation />
       <main>
         <HeroSection />
-        <AboutSection />
         <AdvisorSection />
         <EventsShowcaseSection />
         <ProjectsShowcaseSection />
