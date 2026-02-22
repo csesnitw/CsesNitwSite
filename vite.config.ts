@@ -27,6 +27,7 @@ export default defineConfig({
   outDir: path.resolve(import.meta.dirname, "dist"),
     emptyOutDir: true,
   },
+  appType: "spa",
   server: {
     fs: {
       strict: true,
