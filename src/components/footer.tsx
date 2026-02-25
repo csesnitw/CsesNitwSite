@@ -35,6 +35,7 @@ export default function Footer() {
     { href: "/events", label: "Events" },
     { href: "/#projects-showcase", label: "Projects" },
     { href: "/#contact", label: "Contact" },
+    { href: "/Internship Ebook.pdf", label: "Internship Ebook" },
   ];
 
   const socialLinks = [
@@ -112,6 +113,18 @@ export default function Footer() {
                         .toLowerCase()
                         .replace(" ", "-")}`}
                       onClick={(e) => handleAnchorClick(e, link.href)}
+                    >
+                      {link.label}
+                    </a>
+                  ) : link.href.endsWith(".pdf") ? (
+                    <a
+                      href={link.href}
+                      className="hover:text-green-400 transition-colors"
+                      data-testid={`footer-link-${link.label
+                        .toLowerCase()
+                        .replace(" ", "-")}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
                       {link.label}
                     </a>
