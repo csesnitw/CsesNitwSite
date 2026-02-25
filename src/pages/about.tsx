@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { FaLinkedin, FaInstagram } from "react-icons/fa";
-import { ExternalLink, Target, Eye, Users } from "lucide-react";
+import { ExternalLink, Target, Eye, Users, FileText } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import ParticlesBackground from "@/components/particles-background";
 import Navigation from "@/components/navigation";
@@ -38,6 +38,14 @@ const links = [
     icon: ExternalLink,
     color: "hover:border-green-400 hover:shadow-green-400/20",
     iconColor: "group-hover:text-green-400",
+  },
+  {
+    title: "Internship Ebook",
+    description: "Guide to landing internships",
+    url: "/Internship Ebook.pdf",
+    icon: FileText,
+    color: "hover:border-yellow-400 hover:shadow-yellow-400/20",
+    iconColor: "group-hover:text-yellow-400",
   },
 ];
 
