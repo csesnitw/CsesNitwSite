@@ -1,4 +1,5 @@
 import { useEffect, useState, useRef } from "react";
+import {navItems} from "./navItems";
 
 type Segment = { text: string; color: string };
 type LineData =
@@ -77,7 +78,7 @@ const terminalLines: LineData[] = [
   { mode: "blank" },
 ];
 
-type RenderedLine = { segments: Segment[] };
+type RenderedLine = { segments: Segment[]; wrap?: boolean };
 
 export default function LiveTerminal() {
   const [lines, setLines] = useState<RenderedLine[]>([]);
@@ -85,7 +86,9 @@ export default function LiveTerminal() {
   const [currentChar, setCurrentChar] = useState(0);
   const [showCursor, setShowCursor] = useState(true);
   const scrollRef = useRef<HTMLDivElement>(null);
-
+  const [phase, setPhase] = useState<"booting" | "interactive">("booting");
+  const [inputValue, setInputValue] = useState("");
+  const inputRef = useRef<HTMLInputElement>(null);
   // Blinking cursor
   useEffect(() => {
     const timer = setInterval(() => setShowCursor((v) => !v), 530);
@@ -100,8 +103,12 @@ export default function LiveTerminal() {
   }, [lines, currentChar]);
 
   // Typing effect
+  //switches phase from booting to interactive once the terminal finishes the animation
   useEffect(() => {
-    if (currentLine >= terminalLines.length) return;
+    if (currentLine >= terminalLines.length){
+      setPhase("interactive");
+      return;
+    }
 
     const entry = terminalLines[currentLine];
 
@@ -156,8 +163,87 @@ export default function LiveTerminal() {
     }
   }, [currentLine, currentChar]);
 
-  const isTyping = currentLine < terminalLines.length;
+  //this is the input function
+  function CommandInput(raw: string){
+    const input = raw.trim();
+    const extraInput = raw.split(' ');
+    if(!input) return;
+    let output: Segment[][] = [];
+    if(input === "clear") {
+      setLines([]);
+      setInputValue("");
+      return;
+    }
+    else if(input === "boot"){
+      setLines([]);
+      setCurrentLine(0);
+      setCurrentChar(0);
+      setPhase("booting");
+      setInputValue("");
+      return;
+    }
+    else if(input === "help") {
+      output = [
+        [{text: "Available commands:",color: "text-slate-300"}],
+        [{text: "   help    -    show this list",color: "text-slate-400"}],
+        [{text: "   whoami  -    show current user",color: "text-slate-400"}],
+        [{text: "   clear   -    clear the terminal",color:"text-slate-400"}],
+        [{text: "   boot    -    boots the terminal",color:"text-slate-400"}],
+        [{text: "   echo    -    displays the message",color:"text-slate-400"}],
+        [{text: "   ls      -    list all files and directories",color:"text-slate-400"}],
+        [{text: "   cd      -    Navigates into another page",color:"text-slate-400"}]
+      ];
+    }
+    else if(input === "whoami"){
+      output= [[{text:"cses",color:"text-green-300"}]];
+    }
+    else if(extraInput[0] === "echo"){
+      let lastWord: number = extraInput.length-1;
+      let lastLetter: number = extraInput[lastWord].length - 1;
+      if((extraInput[1][0] === "\"" && extraInput[lastWord][lastLetter] === "\"")
+          ||(extraInput[1][0] === "\'" && extraInput[lastWord][lastLetter] === "\'")){
+        const echoLine = extraInput.slice(1,extraInput.length+1).join(' ');
+        output=[[{text:echoLine,color:"text-green-300"}]];
+      }
+      else{
+        output=[[{text:"Enclose string in quotations",color:"text-red-400"}]];
+      }
+    }
+    else if(input === "ls"){
+      const dirs = navItems.map(link => ({
+        text: link.label + "\t",
+        color: "text-blue-400"
+      }));
+      output=[[...dirs]];
+    }
+    else if(extraInput[0] === "cd"){
+      const dir = extraInput[1];
+      const navExists = navItems.find(directory => directory.label === dir);
+      if(navExists){
+        output = [[{ text: `Changing directory to ${navExists.label}...`, color: "text-cyan-300" }]];
+        setTimeout(() => { window.location.href = navExists.href;},500);
+      }
+      else{
+        output = [[{ text: `cd: ${dir}: No such file or directory`, color: "text-red-400" }]];
+      }
+    }
+    else{
+      output= [[{text:`Command '${input}' not found`,color:"text-red-400"}]];
+    }
+    setLines((prev) => [
+      ...prev,
+      {segments: [{text: `$ ${input}`, color: "text-cyan-400"}]},
+      ...output.map((seg: any) => ({
+        segments: seg,
+        wrap: input === "ls"  
+      })),
+    ]);
+    setInputValue("");
+  }
 
+  const isTyping = currentLine < terminalLines.length;
+  //checking if phase is switching
+  console.log("phase is: ",phase);
   return (
     <div className="w-full mt-12">
       <div className="rounded-xl overflow-hidden border border-border/50 shadow-2xl shadow-green-900/10">
@@ -177,13 +263,14 @@ export default function LiveTerminal() {
         {/* Terminal body */}
         <div
           ref={scrollRef}
+          onClick={()=>inputRef.current?.focus()}
           className="bg-[#0a0e14] px-5 py-4 font-mono text-sm leading-relaxed max-h-80 overflow-y-auto overflow-x-auto scrollbar-thin text-left"
           data-testid="terminal-content"
         >
           {lines.map((line, i) => {
             const isLastLine = i === lines.length - 1 && isTyping;
             return (
-              <div key={i} className="whitespace-pre">
+              <div key={i} className={line.wrap ? "whitespace-pre-wrap break-words" : "whitespace-pre"}>
                 {line.segments.map((seg, j) => (
                   <span key={j} className={seg.color}>
                     {seg.text}
@@ -199,13 +286,16 @@ export default function LiveTerminal() {
               </div>
             );
           })}
-          {!isTyping && (
-            <div className="text-cyan-400 whitespace-pre">
-              ${" "}
-              <span
-                className={`inline-block w-2 h-4 ml-0.5 -mb-0.5 bg-green-400 ${
-                  showCursor ? "opacity-100" : "opacity-0"
-                }`}
+          {phase === "interactive" && (
+            <div className="flex items-center whitespace-pre text-cyan-400">
+              <span>$&nbsp;</span>
+              <input
+                ref = {inputRef}
+                autoFocus
+                value = {inputValue}
+                onChange = {(e) => setInputValue(e.target.value)}
+                onKeyDown={(e) => e.key === "Enter" && CommandInput(inputValue)}
+                className="flex-1 bg-transparent border-none outline-none text-slate-200 font-mono text-sm caret-green-400"
               />
             </div>
           )}

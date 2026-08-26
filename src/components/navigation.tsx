@@ -48,12 +48,15 @@ export default function Navigation() {
     { href: "/about", label: "About", type: "route" as const },
     { href: "/team", label: "Team", type: "route" as const },
     { href: "/events", label: "Events", type: "route" as const },
+    { href: "/alumini", label: "Alumini", type: "route" as const},
+    { href: "/reports", label: "Reports", type: "route" as const },
     { href: "/#projects-showcase", label: "Projects", type: "anchor" as const },
+    { href: "/resources", label: "Resources", type: "route" as const},
     { href: "/#contact", label: "Contact", type: "anchor" as const },
   ];
 
   return (
-    <nav className="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-md border-b border-border">
+    <nav className="sticky top-0 w-full z-50 bg-background/80 backdrop-blur-md border-b border-border shadow-xl">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           <div className="flex items-center space-x-2" data-testid="logo">

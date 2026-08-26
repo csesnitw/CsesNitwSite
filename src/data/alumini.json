@@ -1,0 +1,274 @@
+[
+  {
+    "id": 1,
+    "name": "Rahul Sharma",
+    "graduationYear": 2022,
+    "degree": "B.Tech",
+    "branch": "Computer Science and Engineering",
+    "currentRole": "Software Engineer",
+    "company": "Google",
+    "location": "Bangalore, India",
+    "image": "/images/alumni/rahul-sharma.jpg",
+    "bio": "Software engineer working on distributed systems and cloud infrastructure.",
+    "links": {
+      "linkedin": "https://www.linkedin.com/in/rahul-sharma",
+      "github": "https://github.com/rahul-sharma"
+    }
+  },
+  {
+    "id": 2,
+    "name": "Priya Singh",
+    "graduationYear": 2023,
+    "degree": "B.Tech",
+    "branch": "Computer Science and Engineering",
+    "currentRole": "Product Engineer",
+    "company": "Microsoft",
+    "location": "Hyderabad, India",
+    "image": "/images/alumni/priya-singh.jpg",
+    "bio": "Product engineer interested in web technologies and developer tools.",
+    "links": {
+      "linkedin": "https://www.linkedin.com/in/priya-singh",
+      "github": "https://github.com/priya-singh"
+    }
+  },
+  {
+    "id": 3,
+    "name": "Arjun Mehta",
+    "graduationYear": 2022,
+    "degree": "B.Tech",
+    "branch": "Computer Science and Engineering",
+    "currentRole": "Software Engineer",
+    "company": "Amazon",
+    "location": "Bangalore, India",
+    "image": "/images/alumni/arjun-mehta.jpg",
+    "bio": "Software engineer focused on scalable backend systems and cloud infrastructure.",
+    "links": {
+      "linkedin": "https://www.linkedin.com/in/arjun-mehta",
+      "github": "https://github.com/arjun-mehta"
+    }
+  },
+  {
+    "id": 4,
+    "name": "Ananya Rao",
+    "graduationYear": 2021,
+    "degree": "B.Tech",
+    "branch": "Computer Science and Engineering",
+    "currentRole": "Data Scientist",
+    "company": "Adobe",
+    "location": "Noida, India",
+    "image": "/images/alumni/ananya-rao.jpg",
+    "bio": "Data scientist working on machine learning, analytics, and intelligent applications.",
+    "links": {
+      "linkedin": "https://www.linkedin.com/in/ananya-rao",
+      "github": "https://github.com/ananya-rao"
+    }
+  },
+  {
+    "id": 5,
+    "name": "Rohan Kapoor",
+    "graduationYear": 2024,
+    "degree": "B.Tech",
+    "branch": "Computer Science and Engineering",
+    "currentRole": "Frontend Engineer",
+    "company": "Flipkart",
+    "location": "Bangalore, India",
+    "image": "/images/alumni/rohan-kapoor.jpg",
+    "bio": "Frontend engineer passionate about building accessible and high-performance web applications.",
+    "links": {
+      "linkedin": "https://www.linkedin.com/in/rohan-kapoor",
+      "github": "https://github.com/rohan-kapoor"
+    }
+  },
+  {
+    "id": 6,
+    "name": "Kavya Nair",
+    "graduationYear": 2020,
+    "degree": "B.Tech",
+    "branch": "Computer Science and Engineering",
+    "currentRole": "Machine Learning Engineer",
+    "company": "NVIDIA",
+    "location": "Pune, India",
+    "image": "/images/alumni/kavya-nair.jpg",
+    "bio": "Machine learning engineer working on computer vision and accelerated computing.",
+    "links": {
+      "linkedin": "https://www.linkedin.com/in/kavya-nair",
+      "github": "https://github.com/kavya-nair"
+    }
+  },
+  {
+    "id": 7,
+    "name": "Aditya Verma",
+    "graduationYear": 2023,
+    "degree": "B.Tech",
+    "branch": "Computer Science and Engineering",
+    "currentRole": "Backend Engineer",
+    "company": "Swiggy",
+    "location": "Bangalore, India",
+    "image": "/images/alumni/aditya-verma.jpg",
+    "bio": "Backend engineer specializing in distributed systems, APIs, and database architecture.",
+    "links": {
+      "linkedin": "https://www.linkedin.com/in/aditya-verma",
+      "github": "https://github.com/aditya-verma"
+    }
+  },
+  {
+    "id": 8,
+    "name": "Meera Iyer",
+    "graduationYear": 2022,
+    "degree": "B.Tech",
+    "branch": "Computer Science and Engineering",
+    "currentRole": "Software Developer",
+    "company": "Atlassian",
+    "location": "Hyderabad, India",
+    "image": "/images/alumni/meera-iyer.jpg",
+    "bio": "Software developer interested in developer productivity and collaborative software.",
+    "links": {
+      "linkedin": "https://www.linkedin.com/in/meera-iyer",
+      "github": "https://github.com/meera-iyer"
+    }
+  },
+  {
+    "id": 9,
+    "name": "Vikram Joshi",
+    "graduationYear": 2019,
+    "degree": "B.Tech",
+    "branch": "Computer Science and Engineering",
+    "currentRole": "Engineering Manager",
+    "company": "Microsoft",
+    "location": "Redmond, USA",
+    "image": "/images/alumni/vikram-joshi.jpg",
+    "bio": "Engineering manager leading teams that build reliable cloud-based software systems.",
+    "links": {
+      "linkedin": "https://www.linkedin.com/in/vikram-joshi",
+      "github": "https://github.com/vikram-joshi"
+    }
+  },
+  {
+    "id": 10,
+    "name": "Sneha Das",
+    "graduationYear": 2021,
+    "degree": "B.Tech",
+    "branch": "Computer Science and Engineering",
+    "currentRole": "Cloud Engineer",
+    "company": "Oracle",
+    "location": "Hyderabad, India",
+    "image": "/images/alumni/sneha-das.jpg",
+    "bio": "Cloud engineer working on distributed infrastructure and cloud automation.",
+    "links": {
+      "linkedin": "https://www.linkedin.com/in/sneha-das",
+      "github": "https://github.com/sneha-das"
+    }
+  },
+  {
+    "id": 11,
+    "name": "Karan Malhotra",
+    "graduationYear": 2020,
+    "degree": "B.Tech",
+    "branch": "Computer Science and Engineering",
+    "currentRole": "DevOps Engineer",
+    "company": "Cisco",
+    "location": "Bangalore, India",
+    "image": "/images/alumni/karan-malhotra.jpg",
+    "bio": "DevOps engineer focused on CI/CD, containerization, and infrastructure automation.",
+    "links": {
+      "linkedin": "https://www.linkedin.com/in/karan-malhotra",
+      "github": "https://github.com/karan-malhotra"
+    }
+  },
+  {
+    "id": 12,
+    "name": "Ishita Sen",
+    "graduationYear": 2024,
+    "degree": "B.Tech",
+    "branch": "Computer Science and Engineering",
+    "currentRole": "Product Designer",
+    "company": "Razorpay",
+    "location": "Bangalore, India",
+    "image": "/images/alumni/ishita-sen.jpg",
+    "bio": "Product designer interested in creating intuitive interfaces and digital experiences.",
+    "links": {
+      "linkedin": "https://www.linkedin.com/in/ishita-sen",
+      "github": "https://github.com/ishita-sen"
+    }
+  },
+  {
+    "id": 13,
+    "name": "Nikhil Agarwal",
+    "graduationYear": 2018,
+    "degree": "B.Tech",
+    "branch": "Computer Science and Engineering",
+    "currentRole": "Senior Software Engineer",
+    "company": "Google",
+    "location": "Bangalore, India",
+    "image": "/images/alumni/nikhil-agarwal.jpg",
+    "bio": "Senior software engineer building large-scale distributed systems and developer platforms.",
+    "links": {
+      "linkedin": "https://www.linkedin.com/in/nikhil-agarwal",
+      "github": "https://github.com/nikhil-agarwal"
+    }
+  },
+  {
+    "id": 14,
+    "name": "Pooja Menon",
+    "graduationYear": 2022,
+    "degree": "B.Tech",
+    "branch": "Computer Science and Engineering",
+    "currentRole": "Security Engineer",
+    "company": "Cloudflare",
+    "location": "Remote",
+    "image": "/images/alumni/pooja-menon.jpg",
+    "bio": "Security engineer working on application security, network protection, and privacy.",
+    "links": {
+      "linkedin": "https://www.linkedin.com/in/pooja-menon",
+      "github": "https://github.com/pooja-menon"
+    }
+  },
+  {
+    "id": 15,
+    "name": "Rahul Chatterjee",
+    "graduationYear": 2021,
+    "degree": "B.Tech",
+    "branch": "Computer Science and Engineering",
+    "currentRole": "Full Stack Developer",
+    "company": "Zomato",
+    "location": "Gurgaon, India",
+    "image": "/images/alumni/rahul-chatterjee.jpg",
+    "bio": "Full stack developer building modern web applications and scalable backend services.",
+    "links": {
+      "linkedin": "https://www.linkedin.com/in/rahul-chatterjee",
+      "github": "https://github.com/rahul-chatterjee"
+    }
+  },
+  {
+    "id": 16,
+    "name": "Divya Krishnan",
+    "graduationYear": 2020,
+    "degree": "B.Tech",
+    "branch": "Computer Science and Engineering",
+    "currentRole": "AI Research Engineer",
+    "company": "IBM",
+    "location": "Bangalore, India",
+    "image": "/images/alumni/divya-krishnan.jpg",
+    "bio": "AI research engineer exploring natural language processing and applied machine learning.",
+    "links": {
+      "linkedin": "https://www.linkedin.com/in/divya-krishnan",
+      "github": "https://github.com/divya-krishnan"
+    }
+  },
+  {
+    "id": 17,
+    "name": "Siddharth Gupta",
+    "graduationYear": 2019,
+    "degree": "B.Tech",
+    "branch": "Computer Science and Engineering",
+    "currentRole": "Technical Lead",
+    "company": "Salesforce",
+    "location": "Hyderabad, India",
+    "image": "/images/alumni/siddharth-gupta.jpg",
+    "bio": "Technical lead with experience in enterprise software, cloud platforms, and distributed systems.",
+    "links": {
+      "linkedin": "https://www.linkedin.com/in/siddharth-gupta",
+      "github": "https://github.com/siddharth-gupta"
+    }
+  }
+]

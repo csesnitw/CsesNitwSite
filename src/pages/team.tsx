@@ -57,9 +57,9 @@ export default function TeamPage() {
 
   return (
     <div className="min-h-screen">
+      <Navigation />
       <div className="pt-24 pb-16 px-4">
         <ParticlesBackground />
-        <Navigation />
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <h1 className="text-4xl font-bold ">Our Team</h1>
