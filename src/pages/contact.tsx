@@ -36,7 +36,7 @@ import Footer from "@/components/footer"
 export default function ContactForm() {
 
     const [, navigate] = useLocation();
-    const [state, handleSubmit] = useForm("xbgrkqej");
+    const [state, handleSubmit] = useForm("xqpadjby");
 
     useEffect(() => {
         if(state.succeeded){
