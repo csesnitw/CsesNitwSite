@@ -10,6 +10,7 @@ import About from "@/pages/about";
 import Events from "@/pages/events";
 import Resources from "@/pages/resources";
 import Reports from "@/pages/reports";
+import ContactForm from "@/pages/contact";
 
 function Router() {
   return (
@@ -20,6 +21,7 @@ function Router() {
       <Route path="/events" component={Events} />
       <Route path="/resources" component={Resources} />
       <Route path="/reports" component={Reports} />
+      <Route path= "/contact" component={ContactForm} />
       <Route component={NotFound} />
     </Switch>
   );
