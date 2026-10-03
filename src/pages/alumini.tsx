@@ -17,8 +17,8 @@ export default function Alumini() {
   const [alumini, setAlumini] = useState<Alumnus[]>([])
 
   useEffect(() => {
-    fetch("src/data/alumini.json").then(response => response.json()).then(data => setAlumini(data))
-  }, [])
+    import("@/data/alumini.json").then((mod) => setAlumini(mod.default as AlumnusData[]));
+  }, []);
 
 
   return (<div className="">
