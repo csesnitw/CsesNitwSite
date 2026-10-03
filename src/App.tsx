@@ -10,6 +10,9 @@ import Team from "@/pages/team";
 import About from "@/pages/about";
 import Events from "@/pages/events";
 import Alumini from "@/pages/alumini";
+import Resources from "@/pages/resources";
+import Reports from "@/pages/reports";
+import ContactForm from "@/pages/contact";
 
 function AppRouter() {
   return (
@@ -19,6 +22,9 @@ function AppRouter() {
       <Route path="/about" component={About} />
       <Route path="/events" component={Events} />
       <Route path="/alumini" component={Alumini} />
+      <Route path="/resources" component={Resources} />
+      <Route path="/reports" component={Reports} />
+      <Route path= "/contact" component={ContactForm} />
       <Route component={NotFound} />
     </Switch>
   );

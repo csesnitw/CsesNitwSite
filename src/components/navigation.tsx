@@ -49,8 +49,11 @@ export default function Navigation() {
     { href: "/team", label: "Team", type: "route" as const },
     { href: "/events", label: "Events", type: "route" as const },
     { href: "/alumini", label: "Alumini", type: "route" as const},
+    { href: "/reports", label: "Reports", type: "route" as const },
     { href: "/#projects-showcase", label: "Projects", type: "anchor" as const },
-    { href: "/#contact", label: "Contact", type: "anchor" as const },
+    { href: "/resources", label: "Resources", type: "route" as const},
+    { href: "/#contact", label: "Socials", type: "anchor" as const },
+    {href: "/contact", label: "Contact", type: "route" as const}, 
   ];
 
   return (
