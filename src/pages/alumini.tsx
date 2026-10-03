@@ -28,7 +28,7 @@ export default function Alumini() {
 
     <main className="max-w-8xl mx-auto pt-24 pb-16 px-4">
       <div className="text-center mb-12">
-        <h1 className="text-4xl font-bold ">Notable Alumini</h1>
+        <h1 className="text-4xl font-bold ">Notable Alumni</h1>
         <p className="text-xl text-slate-400 mt-2">
           Meet the people creating legacy.
         </p>
